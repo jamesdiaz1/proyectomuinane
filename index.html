@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Proyecto Muinane</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Proyecto Muinane - Recuperación de la Lengua Materna Indígena</title>
+  <meta name="description" content="Proyecto educativo mediado por TIC para la recuperación y preservación de la lengua materna indígena Muinane, Amazonas, Colombia.">
+  <meta name="keywords" content="Muinane, lengua indígena, TIC, educación intercultural, Amazonas, Colombia">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -27,6 +27,56 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    :root {
+      --color-tierra: #8B4513;
+      --color-selva: #2D5A27;
+      --color-agua: #1A6B8A;
+      --color-ocre: #C8860A;
+    }
+    .sitename { color: var(--color-selva) !important; font-weight: 700; }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 10px;
+      padding: 16px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    .stat-box .stat-num { font-size: 2rem; font-weight: 700; display: block; }
+    .stat-box .stat-label { font-size: 0.78rem; opacity: 0.85; letter-spacing: 1px; text-transform: uppercase; }
+    .section-quote {
+      border-left: 4px solid var(--color-ocre);
+      padding: 14px 22px;
+      background: #fdf8f0;
+      font-style: italic;
+      color: #555;
+      margin: 24px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .objetivo-num {
+      width: 44px; height: 44px;
+      background: var(--color-selva);
+      color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: Amoeba
   * Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
@@ -42,36 +92,19 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Proyecto Muinane</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Inicio</a></li>
-          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#about">El Pueblo Muinane</a></li>
           <li><a href="#services">Objetivos</a></li>
-          <li><a href="#portfolio">Metas</a></li>
-          <li><a href="#team">Grupo 5</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#portfolio">Actividades</a></li>
+          <li><a href="#vulnerabilidad">Riesgos</a></li>
+          <li><a href="#faq">Preguntas Frecuentes</a></li>
+          <li><a href="#team">Equipo</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -84,14 +117,41 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" alt="Amazonas colombiano, territorio Muinane" data-aos="fade-in">
 
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Welcome to Amoeba</h2>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <a href="#about" class="btn-get-started">Get Started</a>
+          <div class="col-lg-9">
+            <div class="hero-badge">Amazonas, Colombia</div>
+            <h2>La Voz Muinane No Se Apaga</h2>
+            <p>Un proyecto educativo mediado por TIC para recuperar, preservar y transmitir la lengua materna del pueblo Muinane a las nuevas generaciones.</p>
+            <a href="#about" class="btn-get-started">Conocer el Proyecto</a>
+            <div class="row mt-5 g-3 justify-content-center">
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-num">~3.000</span>
+                  <span class="stat-label">Hablantes activos</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-num">En riesgo</span>
+                  <span class="stat-label">Clasificación UNESCO</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-num">Amazónica</span>
+                  <span class="stat-label">Familia lingüística</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-num">2025</span>
+                  <span class="stat-label">Año de inicio</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -101,135 +161,74 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>El Pueblo Muinane</h2>
+        <p>Una comunidad amazónica cuya lengua y saber ancestral enfrentan el silencio generacional</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="Comunidad Muinane, Amazonas">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident</h3>
+            <h3>Un idioma que carga siglos de conocimiento</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              El Muinane es una lengua amazónica hablada en los departamentos de Amazonas y Caquetá, Colombia. No es solo un sistema de comunicación: es el archivo vivo de una cosmología, una medicina y una forma de habitar el territorio que no existe en ningún otro idioma.
             </p>
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>La UNESCO clasifica al Muinane como lengua en situación de vulnerabilidad, con transmisión intergeneracional interrumpida en muchas familias.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Los jóvenes de la comunidad crecen en entornos bilingües donde el español desplaza al Muinane como lengua cotidiana y de escolarización.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Los portadores de saber, abuelos y sabedores del pueblo, son los últimos custodios de vocabularios, relatos y conocimientos que no tienen traducción posible.</span></li>
             </ul>
+            <div class="section-quote">
+              "Cuando muere una lengua, no desaparece solo un idioma. Desaparece una manera de ver el mundo que tardó siglos en construirse." — UNESCO, Atlas de las Lenguas en Peligro, 2022.
+            </div>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              Este proyecto parte de un principio claro: la tecnología no llega antes que la comunidad. Llega como respuesta a una necesidad que la comunidad ya definió, con mecanismos propios de gestión y con los sabedores Muinane como protagonistas del proceso, no como objetos de documentación.
             </p>
           </div>
         </div>
-
       </div>
 
     </section><!-- /About Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-
     <!-- Cards Section -->
     <section id="cards" class="cards section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Wh Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>¿Por qué este proyecto?</h2>
+        <p>Tres razones que explican la urgencia de actuar ahora</p>
+      </div>
 
       <div class="container">
-
         <div class="row gy-4">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="card-item">
               <span>01</span>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+              <h4><a href="#about" class="stretched-link">La brecha generacional</a></h4>
+              <p>Los jóvenes Muinane tienen acceso a tecnología pero no a contenido en su propia lengua. La brecha no es de conectividad: es de presencia digital del saber propio.</p>
             </div>
-          </div><!-- Card Item -->
+          </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="card-item">
               <span>02</span>
-              <h4><a href="" class="stretched-link">Repellat Nihil</a></h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+              <h4><a href="#services" class="stretched-link">El tiempo es un factor</a></h4>
+              <p>Cada año que pasa sin documentación participativa es un año de pérdida irreversible. Los portadores de saber mayores son el archivo vivo que este proyecto busca activar.</p>
             </div>
-          </div><!-- Card Item -->
+          </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="card-item">
               <span>03</span>
-              <h4><a href="" class="stretched-link">Ad ad velit qui</a></h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+              <h4><a href="#portfolio" class="stretched-link">La tecnología como aliada</a></h4>
+              <p>Usada con soberanía comunitaria, la tecnología puede preservar, difundir y revitalizar saberes. La comunidad decide qué se documenta, cómo y para quién.</p>
             </div>
-          </div><!-- Card Item -->
+          </div>
 
         </div>
-
       </div>
 
     </section><!-- /Cards Section -->
@@ -237,79 +236,75 @@
     <!-- Services Section -->
     <section id="services" class="services section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Objetivos del Proyecto</h2>
+        <p>Seis líneas de acción concretas para la recuperación de la lengua Muinane</p>
+      </div>
 
       <div class="container">
-
         <div class="row gy-4">
 
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-mic"></i></div>
               <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                <h4 class="title">Archivo oral Muinane</h4>
+                <p class="description">Documentar relatos, cantos, vocabularios y conocimientos de los sabedores mayores en audio y video de alta calidad, con consentimiento comunitario.</p>
               </div>
             </div>
           </div>
-          <!-- End Service Item -->
 
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-book"></i></div>
               <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exa</p>
+                <h4 class="title">Material educativo bilingüe</h4>
+                <p class="description">Producir recursos pedagógicos en Muinane y español para uso en las escuelas comunitarias, desarrollados con maestros locales y sabedores.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
               <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                <h4 class="title">Red intergeneracional</h4>
+                <p class="description">Conectar a los jóvenes con los portadores de saber a través de plataformas digitales accesibles offline, manteniendo vivo el hilo de transmisión cultural.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
               <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                <h4 class="title">App de lengua Muinane</h4>
+                <p class="description">Desarrollar una aplicación móvil con vocabulario, pronunciación y cuentos en Muinane, diseñada con y para la comunidad, disponible sin conexión permanente.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
               <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese</p>
+                <h4 class="title">Soberanía digital comunitaria</h4>
+                <p class="description">Garantizar que todos los archivos y contenidos generados sean propiedad de la comunidad Muinane, alojados en infraestructura que ellos controlan.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-mortarboard"></i></div>
               <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio dasa fermo lind saca</p>
+                <h4 class="title">Formación de docentes locales</h4>
+                <p class="description">Capacitar a maestros y jóvenes de la comunidad como productores de contenido digital en Muinane, invirtiendo el flujo tradicional de enseñanza tecnológica.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
-
       </div>
 
     </section><!-- /Services Section -->
@@ -323,9 +318,9 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
+              <h3>La lengua Muinane tiene algo que ningún archivo puede reemplazar</h3>
+              <p>Tiene hablantes. Mientras haya personas que la usen, transmitan y enseñen, la lengua vive. Este proyecto existe para que esas personas tengan las herramientas digitales que necesitan, en sus propios términos.</p>
+              <a class="cta-btn" href="#contact">Únete al proyecto</a>
             </div>
           </div>
         </div>
@@ -336,171 +331,170 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Actividades del Proyecto</h2>
+        <p>Las acciones concretas que se desarrollan con la comunidad Muinane</p>
+      </div>
 
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+            <li data-filter="*" class="filter-active">Todas</li>
+            <li data-filter=".filter-app">Digital</li>
+            <li data-filter=".filter-product">Comunidad</li>
+            <li data-filter=".filter-branding">Educación</li>
+            <li data-filter=".filter-books">Archivo</li>
+          </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="App Muinane">
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-1.webp" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>App Muinane</h4>
+                  <p>Aplicación móvil de vocabulario y pronunciación en lengua Muinane</p>
+                  <a href="assets/img/portfolio/portfolio-1.webp" title="App Muinane" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="Círculos de saberes">
                 <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-10.webp" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Círculos de saberes</h4>
+                  <p>Sesiones con sabedores mayores para documentar conocimiento oral</p>
+                  <a href="assets/img/portfolio/portfolio-10.webp" title="Círculos de saberes" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="Cartillas bilingües">
                 <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-7.webp" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Cartillas bilingües</h4>
+                  <p>Material pedagógico en Muinane y español para escuelas comunitarias</p>
+                  <a href="assets/img/portfolio/portfolio-7.webp" title="Cartillas bilingues" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="Archivo oral">
                 <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-4.webp" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Archivo oral digital</h4>
+                  <p>Grabaciones de relatos, cantos y vocabularios de los sabedores Muinane</p>
+                  <a href="assets/img/portfolio/portfolio-4.webp" title="Archivo oral" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Red digital comunitaria">
                 <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-2.webp" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Red digital comunitaria</h4>
+                  <p>Plataforma de comunicación entre jóvenes y sabedores de la comunidad</p>
+                  <a href="assets/img/portfolio/portfolio-2.webp" title="Red digital" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="Cartografía social">
                 <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-11.webp" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Cartografía social</h4>
+                  <p>Mapas digitales del territorio Muinane elaborados por la propia comunidad</p>
+                  <a href="assets/img/portfolio/portfolio-11.webp" title="Cartografia social" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="Formación docente">
                 <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-8.webp" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Formación docente local</h4>
+                  <p>Talleres para maestros comunitarios como productores de contenido digital</p>
+                  <a href="assets/img/portfolio/portfolio-8.webp" title="Formacion docente" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Banco de relatos">
                 <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-5.webp" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Banco de relatos Muinane</h4>
+                  <p>Repositorio de cuentos y mitos tradicionales en formato digital y audio</p>
+                  <a href="assets/img/portfolio/portfolio-5.webp" title="Banco de relatos" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Canal YouTube Muinane">
                 <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-3.webp" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Canal YouTube Muinane</h4>
+                  <p>Producción de videos en lengua Muinane para audiencias jóvenes dentro y fuera del territorio</p>
+                  <a href="assets/img/portfolio/portfolio-3.webp" title="Canal YouTube" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt="Medicina ancestral">
                 <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-12.webp" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Vocabulario de medicina ancestral</h4>
+                  <p>Documentación participativa del conocimiento herbolario y de sanación del pueblo Muinane</p>
+                  <a href="assets/img/portfolio/portfolio-12.webp" title="Medicina ancestral" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt="Identidad visual">
                 <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-9.webp" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Identidad visual del proyecto</h4>
+                  <p>Diseño gráfico con elementos propios de la iconografía y artesanía Muinane</p>
+                  <a href="assets/img/portfolio/portfolio-9.webp" title="Identidad visual" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Diccionario Muinane">
                 <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/portfolio-6.webp" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Diccionario digital Muinane</h4>
+                  <p>Base de datos léxica con pronunciación, ejemplos de uso y contexto cultural para cada entrada</p>
+                  <a href="assets/img/portfolio/portfolio-6.webp" title="Diccionario Muinane" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-          </div><!-- End Portfolio Container -->
+          </div>
 
         </div>
 
@@ -508,141 +502,178 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
+    <!-- Vulnerabilidad Section -->
+    <section id="vulnerabilidad" class="vulnerabilidad section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Factores Restrictivos y Riesgos</h2>
+        <p>Matriz de vulnerabilidad del proyecto de fortalecimiento de la lengua Muinane mediante TIC — Resguardo Nonuya de Villazul, Amazonas</p>
+      </div>
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row gy-5">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+          <!-- Introducción -->
+          <div class="col-12">
+            <p>
+              La formulación de un proyecto educativo mediado por tecnología no comienza con la solución, sino con la comprensión profunda del problema. Reconocer los riesgos que pueden afectar su desarrollo es tan importante como definir sus objetivos, puesto que, como señalan Galarza y Almuiñas (2015), la gestión de riesgos en la planificación educativa permite anticipar situaciones críticas y establecer mecanismos de respuesta antes de que estas comprometan los resultados esperados.
+            </p>
+            <p>
+              El presente análisis parte de un estudio DOFA enfocado en las Debilidades y Amenazas derivadas de la situación problémica central: la pérdida de la lengua indígena Muinane en el resguardo Nonuya de Villazul. Ese diagnóstico permitió identificar doce riesgos concretos, valorados según su probabilidad de ocurrencia e impacto sobre el proyecto. Para la representación visual se utilizó el modelo de mapa de calor propuesto por Zepeda (2019).
+            </p>
+          </div>
+
+          <!-- Imagen de la matriz -->
+          <div class="col-12 text-center" data-aos="zoom-in" data-aos-delay="150">
+            <figure>
+              <img
+                src="assets/img/matriz_de_vulnerabilidad.jpg"
+                class="img-fluid rounded shadow"
+                alt="Matriz de vulnerabilidad — Proyecto Muinane. Mapa de calor con doce riesgos clasificados por probabilidad e impacto."
+                style="max-width: 100%; border: 2px solid #dee2e6;">
+              <figcaption class="mt-3 text-muted" style="font-size: 0.88rem; font-style: italic;">
+                Figura 1. Matriz de vulnerabilidad del Proyecto Muinane. Elaboración propia con base en el modelo de mapa de calor de Zepeda (2019) y la escala de valoración de Conejo (2021). Los colores indican el nivel de riesgo: rojo (Muy Grave), naranja (Grave), amarillo (Importante), verde claro (Apreciable).
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Riesgos críticos -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="p-4 h-100" style="background: #fff5f5; border-left: 5px solid #dc3545; border-radius: 0 8px 8px 0;">
+              <h4 style="color: #dc3545;"><i class="bi bi-exclamation-triangle-fill me-2"></i>Riesgos Muy Graves (valor 25)</h4>
+              <p class="mt-3">Dos riesgos alcanzaron el valor máximo posible en la matriz, con probabilidad 5 e impacto 5:</p>
+              <ul style="padding-left: 1.2rem;">
+                <li class="mb-2"><strong>Extinción irreversible de la lengua Muinane.</strong> Como advierte la UNESCO (2003), una lengua que deja de transmitirse a las nuevas generaciones entra en un proceso de desaparición que, de no intervenirse a tiempo, se vuelve irreversible.</li>
+                <li><strong>Ruptura total en la transmisión intergeneracional.</strong> La interrupción del vínculo entre sabedores mayores y jóvenes elimina el único canal que ninguna plataforma digital puede reemplazar.</li>
               </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+          <!-- Riesgos importantes -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="p-4 h-100" style="background: #fff8ec; border-left: 5px solid #fd7e14; border-radius: 0 8px 8px 0;">
+              <h4 style="color: #fd7e14;"><i class="bi bi-exclamation-circle-fill me-2"></i>Riesgos Importantes (valores 12–16)</h4>
+              <p class="mt-3">Cuatro riesgos actúan como causas de segundo orden que sostienen y profundizan la crisis:</p>
+              <ul style="padding-left: 1.2rem;">
+                <li class="mb-2"><strong>Ausencia de materiales educativos en lengua propia.</strong></li>
+                <li class="mb-2"><strong>Falta de formación docente en educación intercultural bilingüe.</strong></li>
+                <li class="mb-2"><strong>Desalineación del currículo escolar con la identidad Muinane.</strong></li>
+                <li><strong>Brecha digital en el resguardo.</strong> Pineda (2016) señala que la integración efectiva de las TIC requiere condiciones pedagógicas, curriculares e institucionales que la sostengan.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Riesgos apreciables -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+            <div class="p-4" style="background: #f0fdf4; border-left: 5px solid #198754; border-radius: 0 8px 8px 0;">
+              <h4 style="color: #198754;"><i class="bi bi-info-circle-fill me-2"></i>Riesgos Apreciables</h4>
+              <p class="mt-2 mb-3">Cinco riesgos completan el panorama con una dimensión social, normativa y económica que suele subestimarse en la formulación de proyectos. Galarza y Almuiñas (2015) advierten que su acumulación progresiva puede derivar en obstáculos tan significativos como los de mayor urgencia:</p>
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <div class="p-3 rounded" style="background: #fff; border: 1px solid #d1e7dd;">
+                    <strong>Sin plataformas digitales en Muinane.</strong> No existe contenido digital en la lengua disponible para los jóvenes.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 rounded" style="background: #fff; border: 1px solid #d1e7dd;">
+                    <strong>Pérdida de autoestima lingüística.</strong> Los jóvenes perciben la lengua propia como un obstáculo, no como un valor.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 rounded" style="background: #fff; border: 1px solid #d1e7dd;">
+                    <strong>Débil aplicación de la Ley 1381 de 2010</strong> y escaso financiamiento sostenido para proyectos de revitalización lingüística.
+                  </div>
+                </div>
               </div>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item recommended">
-              <span class="recommended-badge">Recommended</span>
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
+          <!-- Conclusión -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="500">
+            <blockquote style="border-left: 4px solid #8B4513; padding: 16px 22px; background: #fdf8f0; border-radius: 0 8px 8px 0; font-style: italic; color: #555;">
+              La pérdida de la lengua Muinane no es el resultado de un solo factor. Es el producto acumulado de debilidades internas no atendidas y de amenazas externas que ejercen presión constante. La visualización de estos riesgos a través del mapa de calor evidencia que la mayor concentración de criticidad se ubica en los factores lingüísticos y pedagógicos, lo que orienta directamente las prioridades de intervención del proyecto.
+              <footer class="mt-2" style="font-size: 0.85rem; color: #888;">— Grupo 5, Matriz de Vulnerabilidad, 2026.</footer>
+            </blockquote>
+          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
+          <!-- Referencias -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+            <h5 style="color: #495057; border-bottom: 2px solid #dee2e6; padding-bottom: 8px; margin-bottom: 16px;">Referencias citadas en esta sección</h5>
+            <ul style="font-size: 0.9rem; color: #666; list-style: none; padding: 0;">
+              <li class="mb-2">Conejo, F. (2021). <em>Matriz de vulnerabilidad</em> [Material de apoyo]. UNIMINUTO.</li>
+              <li class="mb-2">Galarza, J. y Almuiñas, J. (2015). La gestión de los riesgos de planificación estratégica en las instituciones de educación superior. <em>Revista Cubana de Educación Superior, 34</em>(2), 45–53.</li>
+              <li class="mb-2">Pineda, J. (2016). Diseño de proyectos educativos mediados por TIC: un marco de referencia. <em>Opción, 32</em>(10), 483–497.</li>
+              <li class="mb-2">UNESCO. (2003). <em>Language vitality and endangerment</em>. UNESCO.</li>
+              <li>Zepeda, J. A. (2019). <em>Mapa de calor con Excel</em> [Video]. YouTube. <a href="https://youtu.be/yjfQVaH2Kek" target="_blank">https://youtu.be/yjfQVaH2Kek</a></li>
+            </ul>
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Pricing Section -->
+    </section><!-- /Vulnerabilidad Section -->
 
     <!-- Faq Section -->
     <section id="faq" class="faq section light-background">
 
       <div class="container">
-
         <div class="row gy-4">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="content px-xl-5">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+              <h3><span>Preguntas </span><strong>Frecuentes</strong></h3>
+              <p>Respuestas a las inquietudes más comunes sobre el proyecto y el pueblo Muinane.</p>
             </div>
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
             <div class="faq-container">
+
               <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                <h3><span class="num">1.</span> <span>¿Qué es la lengua Muinane y dónde se habla?</span></h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>El Muinane es una lengua amazónica perteneciente a la familia lingüística Bora, hablada principalmente en los departamentos de Amazonas y Caquetá, Colombia. Tiene aproximadamente 3.000 hablantes activos y está clasificada por la UNESCO como lengua vulnerable, con transmisión intergeneracional cada vez más reducida.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
               <div class="faq-item">
-                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
+                <h3><span class="num">2.</span> <span>¿Por qué usar tecnología y no métodos de enseñanza tradicionales?</span></h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>No se reemplaza la enseñanza tradicional: se complementa. Los métodos orales y territoriales de transmisión del saber Muinane son el núcleo del proyecto. La tecnología sirve para extender ese aprendizaje en el tiempo y el espacio, conectar a jóvenes que migraron a ciudades con sus comunidades de origen, y preservar grabaciones de sabedores mayores para las generaciones futuras.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
               <div class="faq-item">
-                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
+                <h3><span class="num">3.</span> <span>¿La comunidad Muinane controla los contenidos que se producen?</span></h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Sí. La soberanía digital comunitaria es un principio no negociable del proyecto. Todos los archivos, grabaciones y materiales son propiedad de la comunidad. Se utilizan protocolos de consentimiento libre, previo e informado de carácter colectivo, y los contenidos se alojan en infraestructura que la comunidad gestiona directamente.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
               <div class="faq-item">
-                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
+                <h3><span class="num">4.</span> <span>¿Cómo puede participar una persona o institución externa?</span></h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Las personas e instituciones externas pueden participar como aliados técnicos o financiadores, siempre bajo los protocolos de relacionamiento que la comunidad establece. No se acepta la extracción de datos o conocimientos sin devolución comunitaria. Las alianzas se formalizan con acuerdos claros sobre propiedad, uso y acceso a los materiales generados.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
               <div class="faq-item">
-                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
+                <h3><span class="num">5.</span> <span>¿Qué pasa con los saberes que no se pueden digitalizar?</span></h3>
                 <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                  <p>La comunidad decide qué se documenta y qué no. Algunos conocimientos, como ciertos rituales o prácticas de sanación, tienen restricciones de transmisión definidas culturalmente. El proyecto respeta esas decisiones. La tecnología complementa el aprendizaje territorial, que sigue siendo el mecanismo principal de transmisión del saber Muinane.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
             </div>
-
           </div>
         </div>
-
       </div>
 
     </section><!-- /Faq Section -->
@@ -650,86 +681,83 @@
     <!-- Team Section -->
     <section id="team" class="team section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Equipo del Proyecto</h2>
+        <p>Grupo 5 — Docentes, investigadores y miembros de la comunidad Muinane</p>
+      </div>
 
       <div class="container">
-
         <div class="row gy-4">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
               <div class="pic"><img src="assets/img/person/person-m-7.webp" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <h4>Coordinador Pedagógico</h4>
+                <span>Diseño curricular intercultural</span>
+                <p>Responsable del diseño de experiencias de aprendizaje situado y de la articulación entre el saber Muinane y las herramientas digitales del proyecto.</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
               <div class="pic"><img src="assets/img/person/person-f-8.webp" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>Investigadora Lingüística</h4>
+                <span>Documentación y archivo oral</span>
+                <p>Lidera el proceso de documentación de la lengua Muinane con los sabedores de la comunidad, siguiendo protocolos de consentimiento libre, previo e informado.</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
               <div class="pic"><img src="assets/img/person/person-m-6.webp" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <h4>Desarrollador TIC</h4>
+                <span>Plataformas y aplicación móvil</span>
+                <p>Diseña y mantiene la infraestructura tecnológica del proyecto, priorizando soluciones offline, de bajo consumo energético y bajo control comunitario.</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
               <div class="pic"><img src="assets/img/person/person-f-4.webp" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <h4>Enlace Comunitario</h4>
+                <span>Gestión territorial y cultural</span>
+                <p>Garantiza que el proyecto respete los protocolos culturales del pueblo Muinane y que la comunidad sea protagonista de cada etapa del proceso, no beneficiaria pasiva.</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
         </div>
-
       </div>
 
     </section><!-- /Team Section -->
@@ -737,17 +765,16 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Contacto</h2>
+        <p>¿Quieres saber más sobre el proyecto o explorar una alianza? Escríbenos.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.3782956312!2d-75.3997!3d-0.7893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ea0b65f0e0f0c1%3A0x0!2sAmazonas%2C%20Colombia!5e0!3m2!1ses!2sco!4v1680000000000" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
         <div class="row gy-4">
 
@@ -755,27 +782,26 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Ubicación</h3>
+                <p>Departamento del Amazonas, Colombia</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Teléfono</h3>
+                <p>+57 (8) 000 0000</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <h3>Correo electrónico</h3>
+                <p>proyectomuinane@correo.com</p>
               </div>
-            </div><!-- End Info Item -->
-
+            </div>
           </div>
 
           <div class="col-lg-8">
@@ -783,32 +809,31 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Tu nombre" required="">
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Tu correo electrónico" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="¿En qué podemos colaborar?" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <div class="loading">Enviando...</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                  <div class="sent-message">Tu mensaje fue enviado. Gracias.</div>
+                  <button type="submit">Enviar mensaje</button>
                 </div>
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 
@@ -825,38 +850,33 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
+            <h4>Ubicación</h4>
+            <p>Amazonas, Colombia</p>
+            <p>Territorio Muinane</p>
           </div>
-
         </div>
 
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
-            <h4>Contact</h4>
+            <h4>Contacto</h4>
             <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
+              <strong>Teléfono:</strong> <span>+57 (8) 000 0000</span><br>
+              <strong>Correo:</strong> <span>proyectomuinane@correo.com</span><br>
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
+          <i class="bi bi-info-circle icon"></i>
           <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
-            </p>
+            <h4>Sobre el proyecto</h4>
+            <p>Proyecto educativo mediado por TIC para la recuperación de la lengua materna indígena Muinane. Grupo 5, 2025.</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
+          <h4>Síguenos</h4>
           <div class="social-links d-flex">
             <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -869,12 +889,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Amoeba</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>2025</span> <strong class="px-1 sitename">Proyecto Muinane</strong> <span>— Todos los derechos reservados</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
       </div>
     </div>
