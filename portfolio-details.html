@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Amoeba Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Referencias y Agradecimientos — Proyecto Muinane</title>
+  <meta name="description" content="Referencias bibliográficas y agradecimientos del proyecto educativo mediado por TIC para la recuperación de la lengua Muinane.">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,230 +14,446 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Amoeba
-  * Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
-  * Updated: Jan 31 2026 with Bootstrap v5.3.8
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    :root {
+      --tierra: #7B3F1E;
+      --selva: #2D5A27;
+      --ocre: #B8860B;
+      --crema: #FAF6EF;
+      --texto: #2C2416;
+      --gris: #6B6357;
+    }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--crema);
+      color: var(--texto);
+    }
+
+    /* ── Hero banner ── */
+    .ref-hero {
+      background: linear-gradient(135deg, #1a3a16 0%, #2D5A27 50%, #4a7c3f 100%);
+      padding: 80px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ref-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .ref-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+    }
+    .ref-hero p {
+      color: rgba(255,255,255,0.82);
+      font-size: 1.05rem;
+      font-style: italic;
+    }
+    .ref-hero .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.88rem;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      margin-bottom: 32px;
+      transition: color 0.2s;
+    }
+    .ref-hero .back-link:hover { color: #fff; }
+    .ornament {
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--ocre);
+      margin: 20px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ── Sections ── */
+    .ref-section {
+      padding: 64px 0;
+    }
+    .ref-section + .ref-section {
+      border-top: 1px solid #e0d9ce;
+    }
+    .section-label {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.78rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gris);
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 600;
+      color: var(--selva);
+      margin-bottom: 32px;
+      line-height: 1.3;
+    }
+
+    /* ── Reference groups ── */
+    .ref-group {
+      margin-bottom: 36px;
+    }
+    .ref-group-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--tierra);
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--ocre);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ref-group-title i { font-size: 1rem; color: var(--ocre); }
+
+    .ref-item {
+      padding: 14px 16px 14px 20px;
+      border-left: 3px solid #e0d9ce;
+      margin-bottom: 10px;
+      font-size: 0.935rem;
+      line-height: 1.7;
+      color: var(--texto);
+      background: #fff;
+      border-radius: 0 6px 6px 0;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .ref-item:hover {
+      border-left-color: var(--selva);
+      box-shadow: 0 2px 12px rgba(45,90,39,0.08);
+    }
+    .ref-item em { font-style: italic; }
+    .ref-item a {
+      color: var(--selva);
+      word-break: break-all;
+      font-size: 0.87rem;
+    }
+
+    /* ── Thank you card ── */
+    .thanks-card {
+      background: linear-gradient(135deg, #1a3a16 0%, #2D5A27 100%);
+      border-radius: 16px;
+      padding: 56px 48px;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+    }
+    .thanks-card::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      left: 24px;
+      font-family: 'Playfair Display', serif;
+      font-size: 180px;
+      color: rgba(255,255,255,0.06);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .thanks-card .thanks-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 28px;
+    }
+    .thanks-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    .thanks-card p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: rgba(255,255,255,0.88);
+      max-width: 680px;
+    }
+    .thanks-card .highlight {
+      color: #f0c96e;
+      font-weight: 600;
+    }
+    .thanks-card .signature {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.18);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .thanks-card .signature-names {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.9);
+    }
+    .thanks-card .signature-names span {
+      display: block;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      font-style: italic;
+      margin-top: 2px;
+    }
+    .badge-uniminuto {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 24px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+    }
+
+    /* ── Footer ── */
+    .ref-footer {
+      background: var(--texto);
+      color: rgba(255,255,255,0.6);
+      padding: 28px 0;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .ref-footer a { color: rgba(255,255,255,0.5); }
+    .ref-footer .sitename { color: #f0c96e; font-weight: 600; }
+
+    /* ── Floating back button ── */
+    .float-back {
+      position: fixed;
+      bottom: 28px;
+      left: 28px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #2D5A27, #4a7c3f);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px 12px 16px;
+      border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(45,90,39,0.45);
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.9rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .float-back:hover {
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(45,90,39,0.6);
+    }
+    .float-back .float-icon {
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 
-<body class="portfolio-details-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <!-- Botón flotante volver al proyecto -->
+  <a href="index.html" class="float-back" onclick="window.location.href='index.html'; return false;">
+    <span class="float-icon"><i class="bi bi-arrow-left"></i></span>
+    Volver al proyecto
+  </a>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Amoeba</h1>
-      </a>
+  <main>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+    <!-- Hero -->
+    <div class="ref-hero">
+      <div class="container">
+        <h1>Referencias y<br>Agradecimientos</h1>
+        <p>Proyecto Educativo Mediado por TIC — Recuperación de la Lengua Muinane</p>
+        <span class="ornament"></span>
+      </div>
     </div>
-  </header>
 
-  <main class="main">
+    <!-- References Section -->
+    <section class="ref-section">
+      <div class="container">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Portfolio Details</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
+        <p class="section-label">Bibliografía</p>
+        <h2 class="section-title">Referencias Bibliográficas</h2>
+
+        <!-- Legislación colombiana -->
+        <div class="ref-group" data-aos="fade-up">
+          <div class="ref-group-title">
+            <i class="bi bi-bank"></i> Legislación Colombiana
+          </div>
+          <div class="ref-item">
+            Congreso de la República de Colombia. (1992). <em>Ley 30 de 1992, por la cual se organiza el servicio público de la educación superior.</em>
+          </div>
+          <div class="ref-item">
+            Congreso de la República de Colombia. (1994). <em>Ley 115 de 1994, por la cual se expide la Ley General de Educación.</em>
+          </div>
+          <div class="ref-item">
+            Congreso de la República de Colombia. (2006). <em>Ley 1098 de 2006, por la cual se expide el Código de la Infancia y la Adolescencia.</em>
+          </div>
+          <div class="ref-item">
+            Congreso de la República de Colombia. (2010). <em>Ley 1381 de 2010, por la cual se desarrollan los derechos de los pueblos indígenas sobre sus lenguas nativas.</em>
+          </div>
+          <div class="ref-item">
+            Congreso de la República de Colombia. (2016). <em>Ley 1804 de 2016, por la cual se establece la política de Estado para el desarrollo integral de la primera infancia de Cero a Siempre.</em>
+          </div>
+          <div class="ref-item">
+            Ministerio de Educación Nacional. (2015). <em>Decreto 1075 de 2015: Decreto Único Reglamentario del Sector Educación.</em>
+          </div>
+          <div class="ref-item">
+            Ministerio de Educación Nacional. (s.f.). <em>Plan Nacional de Desarrollo: Educación de calidad para todos.</em>
           </div>
         </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
+
+        <!-- Libros y artículos académicos -->
+        <div class="ref-group" data-aos="fade-up" data-aos-delay="100">
+          <div class="ref-group-title">
+            <i class="bi bi-journal-text"></i> Libros y Artículos Académicos
+          </div>
+          <div class="ref-item">
+            Barbosa, E., &amp; de Moura, D. G. (2016). <em>Proyectos educativos y sociales: Planificación, gestión, seguimiento y evaluación.</em> Narcea.
+          </div>
+          <div class="ref-item">
+            Conejo, F. (2021). <em>Matriz de vulnerabilidad</em> [Material de apoyo curso]. Corporación Universitaria Minuto de Dios – UNIMINUTO.
+          </div>
+          <div class="ref-item">
+            Fishman, J. A. (1991). <em>Reversing language shift: Theoretical and empirical foundations of assistance to threatened languages.</em> Multilingual Matters.
+          </div>
+          <div class="ref-item">
+            Galarza, J. y Almuiñas, J. (2015). La gestión de los riesgos de planificación estratégica en las instituciones de educación superior. <em>Revista Cubana de Educación Superior, 34</em>(2), 45–53.
+          </div>
+          <div class="ref-item">
+            Ollé, C. y Cerezuela, B. (2018). <em>Gestión de proyectos paso a paso</em> (pp. 48–50). UOC.
+          </div>
+          <div class="ref-item">
+            Pineda Acero, J. A. (2016). Diseño de proyectos educativos mediados por TIC: un marco de referencia. <em>Opción, 32</em>(10), 479–499.
+          </div>
+          <div class="ref-item">
+            Ponce Talancón, H. (2007). La matriz FODA: una alternativa para realizar diagnósticos y determinar estrategias de intervención en las organizaciones productivas y sociales. <em>Contribuciones a la Economía.</em> <a href="https://www.eumed.net/ce/2007b/htc.htm" target="_blank">https://www.eumed.net/ce/2007b/htc.htm</a>
+          </div>
         </div>
-      </nav>
-    </div><!-- End Page Title -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+        <!-- Organismos internacionales -->
+        <div class="ref-group" data-aos="fade-up" data-aos-delay="200">
+          <div class="ref-group-title">
+            <i class="bi bi-globe-americas"></i> Organismos Internacionales
+          </div>
+          <div class="ref-item">
+            UNESCO. (2003). <em>Language vitality and endangerment.</em> Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura.
+          </div>
+          <div class="ref-item">
+            Organización Internacional del Trabajo. (1989). <em>Convenio 169 sobre Pueblos Indígenas y Tribales.</em> OIT.
+          </div>
+          <div class="ref-item">
+            Organización de las Naciones Unidas. (2007). <em>Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas.</em> ONU.
+          </div>
+        </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Recursos digitales -->
+        <div class="ref-group" data-aos="fade-up" data-aos-delay="300">
+          <div class="ref-group-title">
+            <i class="bi bi-display"></i> Recursos Digitales
+          </div>
+          <div class="ref-item">
+            Zepeda, J. A. (2019, 16 de septiembre). <em>Mapa de calor con Excel</em> [Video]. YouTube. <a href="https://youtu.be/yjfQVaH2Kek" target="_blank">https://youtu.be/yjfQVaH2Kek</a>
+          </div>
+        </div>
 
-        <div class="row gy-4">
+      </div>
+    </section>
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
+    <!-- Thank You Section -->
+    <section class="ref-section">
+      <div class="container">
 
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
+        <p class="section-label">Reconocimiento</p>
+        <h2 class="section-title">Agradecimientos</h2>
 
-              <div class="swiper-wrapper align-items-center">
+        <div class="thanks-card" data-aos="fade-up">
+          <div class="thanks-icon">
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h2>Gracias, docente Francisco Conejo</h2>
+          <p>
+            Este proyecto no habría sido posible sin la orientación del docente
+            <span class="highlight">Francisco Conejo</span>,
+            de la asignatura <span class="highlight">Formulación de Proyectos Educativos Mediados por TIC</span>.
+            Su guía metodológica, su exigencia académica y su capacidad para conectar la teoría con los problemas reales de las comunidades educativas fueron determinantes en cada etapa de este trabajo.
+          </p>
+          <p style="margin-top: 18px;">
+            Agradecemos también a la
+            <span class="highlight">Corporación Universitaria Minuto de Dios — UNIMINUTO</span>
+            por crear los espacios formativos que hacen posible proyectos como este: iniciativas que no se quedan en el aula, sino que buscan responder a realidades concretas, urgentes y situadas. La formación que UNIMINUTO ofrece en gestión de tecnología educativa nos dio las herramientas para mirar la educación con criterio crítico y con responsabilidad social.
+          </p>
+          <p style="margin-top: 18px;">
+            Que este proyecto sobre la lengua Muinane sea un pequeño aporte a la conversación sobre lo que la educación mediada por tecnología puede y debe hacer cuando se pone al servicio de quienes más lo necesitan.
+          </p>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="">
-                </div>
+          <div class="badge-uniminuto">
+            <i class="bi bi-mortarboard-fill"></i>
+            Maestría en Gestión de la Tecnología Educativa — UNIMINUTO, 2026
+          </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="">
-                </div>
-
+          <div class="signature">
+            <div>
+              <div class="signature-names">
+                Luis Alejandro González Soto
+                <span>ID: 001142837</span>
               </div>
-              <div class="swiper-pagination"></div>
+            </div>
+            <div style="width:1px; height:40px; background:rgba(255,255,255,0.2);"></div>
+            <div>
+              <div class="signature-names">
+                James Wilmer Díaz Vargas
+                <span>ID: 001136752</span>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
         </div>
 
       </div>
-
-    </section><!-- /Portfolio Details Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
+  <footer class="ref-footer">
     <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
-          </div>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Contact</h4>
-            <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
+      <p>© 2026 <span class="sitename">Proyecto Muinane</span> — Todos los derechos reservados</p>
+      <p style="margin-top:6px;">Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/" target="_blank">DevTools</a></p>
     </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Amoeba</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div>
-    </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -249,12 +464,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

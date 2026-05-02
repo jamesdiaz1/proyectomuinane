@@ -16,7 +16,226 @@
   --heading-font: "Lato",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
+ :root {
+      --tierra: #7B3F1E;
+      --selva: #2D5A27;
+      --ocre: #B8860B;
+      --crema: #FAF6EF;
+      --texto: #2C2416;
+      --gris: #6B6357;
+    }
 
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--crema);
+      color: var(--texto);
+    }
+
+    /* ── Hero banner ── */
+    .ref-hero {
+      background: linear-gradient(135deg, #1a3a16 0%, #2D5A27 50%, #4a7c3f 100%);
+      padding: 80px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ref-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .ref-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+    }
+    .ref-hero p {
+      color: rgba(255,255,255,0.82);
+      font-size: 1.05rem;
+      font-style: italic;
+    }
+    .ref-hero .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.88rem;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      margin-bottom: 32px;
+      transition: color 0.2s;
+    }
+    .ref-hero .back-link:hover { color: #fff; }
+    .ornament {
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--ocre);
+      margin: 20px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ── Sections ── */
+    .ref-section {
+      padding: 64px 0;
+    }
+    .ref-section + .ref-section {
+      border-top: 1px solid #e0d9ce;
+    }
+    .section-label {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.78rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gris);
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 600;
+      color: var(--selva);
+      margin-bottom: 32px;
+      line-height: 1.3;
+    }
+
+    /* ── Reference groups ── */
+    .ref-group {
+      margin-bottom: 36px;
+    }
+    .ref-group-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--tierra);
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--ocre);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ref-group-title i { font-size: 1rem; color: var(--ocre); }
+
+    .ref-item {
+      padding: 14px 16px 14px 20px;
+      border-left: 3px solid #e0d9ce;
+      margin-bottom: 10px;
+      font-size: 0.935rem;
+      line-height: 1.7;
+      color: var(--texto);
+      background: #fff;
+      border-radius: 0 6px 6px 0;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .ref-item:hover {
+      border-left-color: var(--selva);
+      box-shadow: 0 2px 12px rgba(45,90,39,0.08);
+    }
+    .ref-item em { font-style: italic; }
+    .ref-item a {
+      color: var(--selva);
+      word-break: break-all;
+      font-size: 0.87rem;
+    }
+
+    /* ── Thank you card ── */
+    .thanks-card {
+      background: linear-gradient(135deg, #1a3a16 0%, #2D5A27 100%);
+      border-radius: 16px;
+      padding: 56px 48px;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+    }
+    .thanks-card::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      left: 24px;
+      font-family: 'Playfair Display', serif;
+      font-size: 180px;
+      color: rgba(255,255,255,0.06);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .thanks-card .thanks-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 28px;
+    }
+    .thanks-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    .thanks-card p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: rgba(255,255,255,0.88);
+      max-width: 680px;
+    }
+    .thanks-card .highlight {
+      color: #f0c96e;
+      font-weight: 600;
+    }
+    .thanks-card .signature {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.18);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .thanks-card .signature-names {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.9);
+    }
+    .thanks-card .signature-names span {
+      display: block;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      font-style: italic;
+      margin-top: 2px;
+    }
+    .badge-uniminuto {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 24px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+    }
+
+    /* ── Footer ── */
+    .ref-footer {
+      background: var(--texto);
+      color: rgba(255,255,255,0.6);
+      padding: 28px 0;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .ref-footer a { color: rgba(255,255,255,0.5); }
+    .ref-footer .sitename { color: #f0c96e; font-weight: 600; }
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
