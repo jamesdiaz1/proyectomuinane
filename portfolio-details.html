@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Referencias y Agradecimientos — Proyecto Muinane</title>
-  <meta name="description" content="Referencias bibliográficas y agradecimientos del proyecto educativo mediado por TIC para la recuperación de la lengua Muinane.">
+  <meta name="description" content="Referencias bibliográficas (APA 7ª ed. con sangría francesa) y agradecimientos del proyecto educativo mediado por TIC para la recuperación de la lengua Muinane.">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -40,7 +40,7 @@
       color: var(--texto);
     }
 
-    /* ── Hero banner ── */
+    /* Hero banner */
     .ref-hero {
       background: linear-gradient(135deg, #1a3a16 0%, #2D5A27 50%, #4a7c3f 100%);
       padding: 80px 0 60px;
@@ -65,18 +65,6 @@
       font-size: 1.05rem;
       font-style: italic;
     }
-    .ref-hero .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: rgba(255,255,255,0.75);
-      font-size: 0.88rem;
-      text-decoration: none;
-      letter-spacing: 0.5px;
-      margin-bottom: 32px;
-      transition: color 0.2s;
-    }
-    .ref-hero .back-link:hover { color: #fff; }
     .ornament {
       display: block;
       width: 60px;
@@ -86,7 +74,7 @@
       border-radius: 2px;
     }
 
-    /* ── Sections ── */
+    /* Sections */
     .ref-section {
       padding: 64px 0;
     }
@@ -110,7 +98,7 @@
       line-height: 1.3;
     }
 
-    /* ── Reference groups ── */
+    /* Reference groups */
     .ref-group {
       margin-bottom: 36px;
     }
@@ -128,29 +116,42 @@
     }
     .ref-group-title i { font-size: 1rem; color: var(--ocre); }
 
+    /* ESTILO PARA SANGRÍA FRANCESA (APA 7) */
     .ref-item {
-      padding: 14px 16px 14px 20px;
-      border-left: 3px solid #e0d9ce;
-      margin-bottom: 10px;
+      padding: 8px 16px 8px 32px;   /* Espacio izquierdo adicional */
+      margin-bottom: 12px;
       font-size: 0.935rem;
-      line-height: 1.7;
+      line-height: 1.6;
       color: var(--texto);
       background: #fff;
       border-radius: 0 6px 6px 0;
       transition: border-color 0.2s, box-shadow 0.2s;
+      /* Sangría francesa: primera línea normal, las siguientes sangradas */
+      text-indent: -1.8em;   /* Desplaza la primera línea hacia la izquierda */
+      padding-left: 3.8em;   /* Compensa el desplazamiento para que el texto quede alineado */
+      border-left: 3px solid #e0d9ce;
+    }
+    /* Ajuste para pantallas pequeñas */
+    @media (max-width: 576px) {
+      .ref-item {
+        text-indent: -1.2em;
+        padding-left: 2.8em;
+      }
     }
     .ref-item:hover {
       border-left-color: var(--selva);
       box-shadow: 0 2px 12px rgba(45,90,39,0.08);
     }
-    .ref-item em { font-style: italic; }
+    .ref-item em, .ref-item i {
+      font-style: italic;
+    }
     .ref-item a {
       color: var(--selva);
       word-break: break-all;
       font-size: 0.87rem;
     }
 
-    /* ── Thank you card ── */
+    /* Thank you card (sin cambios relevantes) */
     .thanks-card {
       background: linear-gradient(135deg, #1a3a16 0%, #2D5A27 100%);
       border-radius: 16px;
@@ -235,7 +236,7 @@
       margin-top: 20px;
     }
 
-    /* ── Footer ── */
+    /* Footer */
     .ref-footer {
       background: var(--texto);
       color: rgba(255,255,255,0.6);
@@ -246,7 +247,7 @@
     .ref-footer a { color: rgba(255,255,255,0.5); }
     .ref-footer .sitename { color: #f0c96e; font-weight: 600; }
 
-    /* ── Floating back button ── */
+    /* Floating back button */
     .float-back {
       position: fixed;
       bottom: 28px;
@@ -307,85 +308,119 @@
     <section class="ref-section">
       <div class="container">
 
-        <p class="section-label">Bibliografía</p>
+     
         <h2 class="section-title">Referencias Bibliográficas</h2>
+
+        <!-- GUÍA TÉCNICO-PEDAGÓGICA (CGEIB) -->
+        <div class="ref-group" data-aos="fade-up">
+          <div class="ref-group-title">
+            <i class="bi bi-book"></i> Guía técnico‑pedagógica para el diseño de proyectos innovadores
+          </div>
+          <div class="ref-item">
+            De los Santos Quintanilla, A. R., Ramírez Lozano, J., &amp; Lara Torres, J. F. (2013). <em>Guía técnico-pedagógica para el diseño de proyectos innovadores de educación intercultural</em>. Coordinación General de Educación Intercultural y Bilingüe (CGEIB-SEP).
+          </div>
+        </div>
 
         <!-- Legislación colombiana -->
         <div class="ref-group" data-aos="fade-up">
           <div class="ref-group-title">
-            <i class="bi bi-bank"></i> Legislación Colombiana
+            <i class="bi bi-bank"></i> Legislación colombiana
           </div>
           <div class="ref-item">
-            Congreso de la República de Colombia. (1992). <em>Ley 30 de 1992, por la cual se organiza el servicio público de la educación superior.</em>
+            Congreso de la República de Colombia. (1992). <em>Ley 30 de 1992, por la cual se organiza el servicio público de la educación superior</em>.
           </div>
           <div class="ref-item">
-            Congreso de la República de Colombia. (1994). <em>Ley 115 de 1994, por la cual se expide la Ley General de Educación.</em>
+            Congreso de la República de Colombia. (1994). <em>Ley 115 de 1994, por la cual se expide la Ley General de Educación</em>.
           </div>
           <div class="ref-item">
-            Congreso de la República de Colombia. (2006). <em>Ley 1098 de 2006, por la cual se expide el Código de la Infancia y la Adolescencia.</em>
+            Congreso de la República de Colombia. (2006). <em>Ley 1098 de 2006, por la cual se expide el Código de la Infancia y la Adolescencia</em>.
           </div>
           <div class="ref-item">
-            Congreso de la República de Colombia. (2010). <em>Ley 1381 de 2010, por la cual se desarrollan los derechos de los pueblos indígenas sobre sus lenguas nativas.</em>
+            Congreso de la República de Colombia. (2010). <em>Ley 1381 de 2010, por la cual se desarrollan los derechos de los pueblos indígenas sobre sus lenguas nativas</em>.
           </div>
           <div class="ref-item">
-            Congreso de la República de Colombia. (2016). <em>Ley 1804 de 2016, por la cual se establece la política de Estado para el desarrollo integral de la primera infancia de Cero a Siempre.</em>
+            Congreso de la República de Colombia. (2016). <em>Ley 1804 de 2016, por la cual se establece la política de Estado para el desarrollo integral de la primera infancia de Cero a Siempre</em>.
           </div>
           <div class="ref-item">
-            Ministerio de Educación Nacional. (2015). <em>Decreto 1075 de 2015: Decreto Único Reglamentario del Sector Educación.</em>
+            Ministerio de Educación Nacional. (2015). <em>Decreto 1075 de 2015: Decreto Único Reglamentario del Sector Educación</em>.
           </div>
           <div class="ref-item">
-            Ministerio de Educación Nacional. (s.f.). <em>Plan Nacional de Desarrollo: Educación de calidad para todos.</em>
+            Ministerio de Educación Nacional. (2016-2026). <em>Plan Nacional Decenal de Educación 2016-2026</em>.
+          </div>
+          <div class="ref-item">
+            Ministerio de Educación Nacional. (s.f.). <em>Plan Nacional de Desarrollo: Educación de calidad para todos</em>.
           </div>
         </div>
 
         <!-- Libros y artículos académicos -->
         <div class="ref-group" data-aos="fade-up" data-aos-delay="100">
           <div class="ref-group-title">
-            <i class="bi bi-journal-text"></i> Libros y Artículos Académicos
+            <i class="bi bi-journal-text"></i> Libros y artículos académicos
           </div>
           <div class="ref-item">
-            Barbosa, E., &amp; de Moura, D. G. (2016). <em>Proyectos educativos y sociales: Planificación, gestión, seguimiento y evaluación.</em> Narcea.
+            Álvarez García, I. (2002). <em>Planificación y desarrollo de proyectos sociales y educativos</em>. Limusa Noriega.
           </div>
           <div class="ref-item">
-            Conejo, F. (2021). <em>Matriz de vulnerabilidad</em> [Material de apoyo curso]. Corporación Universitaria Minuto de Dios – UNIMINUTO.
+            Barbosa, E., &amp; de Moura, D. G. (2016). <em>Proyectos educativos y sociales: Planificación, gestión, seguimiento y evaluación</em>. Narcea.
           </div>
           <div class="ref-item">
-            Fishman, J. A. (1991). <em>Reversing language shift: Theoretical and empirical foundations of assistance to threatened languages.</em> Multilingual Matters.
+            Conejo, F. (2021). <em>Matriz de vulnerabilidad</em> (Material de apoyo). Corporación Universitaria Minuto de Dios – UNIMINUTO.
           </div>
           <div class="ref-item">
-            Galarza, J. y Almuiñas, J. (2015). La gestión de los riesgos de planificación estratégica en las instituciones de educación superior. <em>Revista Cubana de Educación Superior, 34</em>(2), 45–53.
+            Díaz‑Barriga, F. (2003). Cognición situada y estrategias para el aprendizaje significativo. <em>Revista Electrónica de Investigación Educativa, 5</em>(2). <a href="https://www.redalyc.org/articulo.oa?id=15550207" target="_blank">https://www.redalyc.org/articulo.oa?id=15550207</a>
           </div>
           <div class="ref-item">
-            Ollé, C. y Cerezuela, B. (2018). <em>Gestión de proyectos paso a paso</em> (pp. 48–50). UOC.
+            Fishman, J. A. (1991). <em>Reversing language shift: Theoretical and empirical foundations of assistance to threatened languages</em>. Multilingual Matters.
+          </div>
+          <div class="ref-item">
+            Galarza, J., &amp; Almuiñas, J. (2015). La gestión de los riesgos de planificación estratégica en las instituciones de educación superior. <em>Revista Cubana de Educación Superior, 34</em>(2), 45–53.
+          </div>
+          <div class="ref-item">
+            ILPES. (1992). <em>Guía para la presentación de proyectos</em> (20ª ed.). Siglo XXI Editores.
+          </div>
+          <div class="ref-item">
+            Ollé, C., &amp; Cerezuela, B. (2018). <em>Gestión de proyectos paso a paso</em>. UOC.
+          </div>
+          <div class="ref-item">
+            Piaget, J. (1970). <em>El estructuralismo</em>. Editorial Proteo.
           </div>
           <div class="ref-item">
             Pineda Acero, J. A. (2016). Diseño de proyectos educativos mediados por TIC: un marco de referencia. <em>Opción, 32</em>(10), 479–499.
           </div>
           <div class="ref-item">
-            Ponce Talancón, H. (2007). La matriz FODA: una alternativa para realizar diagnósticos y determinar estrategias de intervención en las organizaciones productivas y sociales. <em>Contribuciones a la Economía.</em> <a href="https://www.eumed.net/ce/2007b/htc.htm" target="_blank">https://www.eumed.net/ce/2007b/htc.htm</a>
+            Ponce Talancón, H. (2007). La matriz FODA: una alternativa para realizar diagnósticos y determinar estrategias de intervención en las organizaciones productivas y sociales. <em>Contribuciones a la Economía</em>. <a href="https://www.eumed.net/ce/2007b/htc.htm" target="_blank">https://www.eumed.net/ce/2007b/htc.htm</a>
+          </div>
+          <div class="ref-item">
+            Schmelkes, S. (2006). La interculturalidad en la educación básica. <em>Revista Prelac, 2</em>, 68–83. UNESCO.
+          </div>
+          <div class="ref-item">
+            Vygotsky, L. S. (1978). <em>El desarrollo de los procesos psicológicos superiores</em>. Crítica.
           </div>
         </div>
 
         <!-- Organismos internacionales -->
         <div class="ref-group" data-aos="fade-up" data-aos-delay="200">
           <div class="ref-group-title">
-            <i class="bi bi-globe-americas"></i> Organismos Internacionales
+            <i class="bi bi-globe-americas"></i> Organismos internacionales
           </div>
           <div class="ref-item">
-            UNESCO. (2003). <em>Language vitality and endangerment.</em> Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura.
+            UNESCO. (2003). <em>Language vitality and endangerment</em>. Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura.
           </div>
           <div class="ref-item">
-            Organización Internacional del Trabajo. (1989). <em>Convenio 169 sobre Pueblos Indígenas y Tribales.</em> OIT.
+            UNESCO. (2006). <em>Directrices de la UNESCO sobre educación intercultural</em>. UNESCO.
           </div>
           <div class="ref-item">
-            Organización de las Naciones Unidas. (2007). <em>Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas.</em> ONU.
+            Organización Internacional del Trabajo. (1989). <em>Convenio 169 sobre Pueblos Indígenas y Tribales</em>. OIT.
+          </div>
+          <div class="ref-item">
+            Organización de las Naciones Unidas. (2007). <em>Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas</em>. ONU.
           </div>
         </div>
 
         <!-- Recursos digitales -->
         <div class="ref-group" data-aos="fade-up" data-aos-delay="300">
           <div class="ref-group-title">
-            <i class="bi bi-display"></i> Recursos Digitales
+            <i class="bi bi-display"></i> Recursos digitales
           </div>
           <div class="ref-item">
             Zepeda, J. A. (2019, 16 de septiembre). <em>Mapa de calor con Excel</em> [Video]. YouTube. <a href="https://youtu.be/yjfQVaH2Kek" target="_blank">https://youtu.be/yjfQVaH2Kek</a>
@@ -395,17 +430,13 @@
       </div>
     </section>
 
-    <!-- Thank You Section -->
+    <!-- Thank You Section (sin cambios) -->
     <section class="ref-section">
       <div class="container">
-
         <p class="section-label">Reconocimiento</p>
         <h2 class="section-title">Agradecimientos</h2>
-
         <div class="thanks-card" data-aos="fade-up">
-          <div class="thanks-icon">
-            <i class="bi bi-heart-fill"></i>
-          </div>
+          <div class="thanks-icon"><i class="bi bi-heart-fill"></i></div>
           <h2>Gracias, docente Francisco Conejo</h2>
           <p>
             Este proyecto no habría sido posible sin la orientación del docente
@@ -421,12 +452,10 @@
           <p style="margin-top: 18px;">
             Que este proyecto sobre la lengua Muinane sea un pequeño aporte a la conversación sobre lo que la educación mediada por tecnología puede y debe hacer cuando se pone al servicio de quienes más lo necesitan.
           </p>
-
           <div class="badge-uniminuto">
             <i class="bi bi-mortarboard-fill"></i>
             Maestría en Gestión de la Tecnología Educativa — UNIMINUTO, 2026
           </div>
-
           <div class="signature">
             <div>
               <div class="signature-names">
@@ -443,7 +472,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -452,7 +480,7 @@
   <footer class="ref-footer">
     <div class="container">
       <p>© 2026 <span class="sitename">Proyecto Muinane</span> — Todos los derechos reservados</p>
-      <p style="margin-top:6px;">Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/" target="_blank">DevTools</a></p>
+      <p style="margin-top:6px;">Diseñado por <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/" target="_blank">DevTools</a></p>
     </div>
   </footer>
 

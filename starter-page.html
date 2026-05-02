@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Amoeba Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Proyecto Muinane - Recuperación de la Lengua Materna Indígena</title>
+  <meta name="description" content="Proyecto educativo mediado por TIC para la recuperación y preservación de la lengua materna indígena Muinane, Amazonas, Colombia.">
+  <meta name="keywords" content="Muinane, lengua indígena, TIC, educación intercultural, Amazonas, Colombia">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -27,51 +27,90 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Amoeba
-  * Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
-  * Updated: Jan 31 2026 with Bootstrap v5.3.8
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    :root {
+      --color-tierra: #8B4513;
+      --color-selva: #2D5A27;
+      --color-agua: #1A6B8A;
+      --color-ocre: #C8860A;
+    }
+    .sitename { color: var(--color-selva) !important; font-weight: 700; }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 10px;
+      padding: 16px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    .stat-box .stat-num { font-size: 2rem; font-weight: 700; display: block; }
+    .stat-box .stat-label { font-size: 0.78rem; opacity: 0.85; letter-spacing: 1px; text-transform: uppercase; }
+    .section-quote {
+      border-left: 4px solid var(--color-ocre);
+      padding: 14px 22px;
+      background: #fdf8f0;
+      font-style: italic;
+      color: #555;
+      margin: 24px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .objetivo-num {
+      width: 44px; height: 44px;
+      background: var(--color-selva);
+      color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+  </style>
+
 </head>
 
-<body class="starter-page-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Amoeba</h1>
+        <h1 class="sitename">Proyecto Muinane</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">El Pueblo Muinane</a></li>
+          <li class="dropdown"><a href="#"><span>El Proyecto</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#problema">El Problema</a></li>
+              <li><a href="#normativa">Marco Legal</a></li>
+              <li><a href="#fundamentacion">Fundamentación Pedagógica</a></li>
+              <li><a href="#services">Objetivos y Metas</a></li>
+              <li><a href="#beneficiarios">Beneficiarios</a></li>
+              <li><a href="#portfolio">Actividades</a></li>
+              <li><a href="#metodologia">Metodología</a></li>
+              <li><a href="#evaluacion">Evaluación</a></li>
+              <li><a href="#impacto">Impacto y Sostenibilidad</a></li>
+              <li><a href="#cronograma">Cronograma</a></li>
+              <li><a href="#financiamiento">Financiamiento</a></li>
+              <li><a href="#vulnerabilidad">Riesgos</a></li>
+              <li><a href="#faq">Preguntas Frecuentes</a></li>
+              <li><a href="#team">Equipo</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="portfolio-details.html">Referencias</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -81,84 +120,1073 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Starter Page</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="Amazonas colombiano, territorio Muinane" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="hero-badge">Amazonas, Colombia</div>
+            <h2>La Voz Muinane No Se Apaga</h2>
+            <p>Un proyecto educativo mediado por TIC para recuperar, preservar y transmitir la lengua materna del pueblo Muinane a las nuevas generaciones.</p>
+            <a href="#about" class="btn-get-started">Conocer el Proyecto</a>
+            <div class="row mt-5 g-3 justify-content-center">
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-num">~3.000</span>
+                  <span class="stat-label">Hablantes activos</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-num">En riesgo</span>
+                  <span class="stat-label">Clasificación UNESCO</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-num">Amazónica</span>
+                  <span class="stat-label">Familia lingüística</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-num">2025</span>
+                  <span class="stat-label">Año de inicio</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+    </section><!-- /Hero Section -->
 
-      <!-- Section Title -->
+    <!-- About Section -->
+    <section id="about" class="about section">
+
       <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+        <h2>El Pueblo Muinane</h2>
+        <p>Una comunidad amazónica cuya lengua y saber ancestral enfrentan el silencio generacional</p>
       </div>
 
-    </section><!-- /Starter Section Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="Comunidad Muinane, Amazonas">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Un idioma que carga siglos de conocimiento</h3>
+            <p class="fst-italic">
+              El Muinane es una lengua amazónica hablada en los departamentos de Amazonas y Caquetá, Colombia. No es solo un sistema de comunicación: es el archivo vivo de una cosmología, una medicina y una forma de habitar el territorio que no existe en ningún otro idioma.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>La UNESCO clasifica al Muinane como lengua en situación de vulnerabilidad, con transmisión intergeneracional interrumpida en muchas familias.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Los jóvenes de la comunidad crecen en entornos bilingües donde el español desplaza al Muinane como lengua cotidiana y de escolarización.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Los portadores de saber, abuelos y sabedores del pueblo, son los últimos custodios de vocabularios, relatos y conocimientos que no tienen traducción posible.</span></li>
+            </ul>
+            <div class="section-quote">
+              "Cuando muere una lengua, no desaparece solo un idioma. Desaparece una manera de ver el mundo que tardó siglos en construirse." — UNESCO, Atlas de las Lenguas en Peligro, 2022.
+            </div>
+            <p>
+              Este proyecto parte de un principio claro: la tecnología no llega antes que la comunidad. Llega como respuesta a una necesidad que la comunidad ya definió, con mecanismos propios de gestión y con los sabedores Muinane como protagonistas del proceso, no como objetos de documentación.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Contexto Socioeconómico Detallado (Nuevo) -->
+    <section id="contexto" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contexto Socioeconómico</h2>
+        <p>Condiciones que justifican la urgencia de la intervención en el resguardo Nonuya de Villazul</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <h4><i class="bi bi-graph-down"></i> Indicadores de vulnerabilidad</h4>
+              <ul class="mt-3">
+                <li><strong>Escolaridad:</strong> Solo el 5% de los jóvenes accede a educación superior. La tasa de analfabetismo en adultos mayores es del 40%.</li>
+                <li><strong>Economía:</strong> Basada en agricultura de subsistencia, pesca artesanal y artesanías. El 70% de las familias vive con menos de 1 salario mínimo mensual.</li>
+                <li><strong>Servicios:</strong> El resguardo no tiene acceso a internet de banda ancha. Solo el 15% de las viviendas cuenta con conexión intermitente vía satelital comunitaria.</li>
+                <li><strong>Salud:</strong> Alta incidencia de enfermedades prevenibles (desnutrición infantil, infecciones respiratorias) por lejanía de centros de salud.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <h4><i class="bi bi-chat-dots"></i> Discriminación lingüística estructural</h4>
+              <ul class="mt-3">
+                <li>El 80% de los jóvenes entre 12 y 18 años no usa el Muinane como lengua cotidiana. Lo entienden parcialmente pero no lo producen.</li>
+                <li>Los docentes no bilingües representan el 75% de la planta educativa, lo que forza el uso del español en el aula.</li>
+                <li>Los padres de familia indígenas (65%) han dejado de hablar Muinane a sus hijos por temor a que sean discriminados en la escuela o en el mercado laboral.</li>
+                <li>No existe ningún material didáctico en Muinane en las escuelas del resguardo. Los niños aprenden a leer y escribir exclusivamente en español.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fundamentación Pedagógica (Nueva sección) -->
+    <section id="fundamentacion" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Fundamentación Teórico-Pedagógica</h2>
+        <p>Principios que sustentan la innovación educativa intercultural y bilingüe</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-4 h-100 bg-white border rounded">
+              <h4><i class="bi bi-brush"></i> Constructivismo social</h4>
+              <p>Basado en Vygotsky (1978) y Piaget (1970). El conocimiento se construye en la interacción con otros y con el entorno. Los sabedores Muinane actúan como mediadores del aprendizaje, y los estudiantes construyen significado a través de la documentación participativa y el diálogo intergeneracional.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 h-100 bg-white border rounded">
+              <h4><i class="bi bi-geo-alt"></i> Aprendizaje situado</h4>
+              <p>Díaz-Barriga (2003) sostiene que el aprendizaje es más significativo cuando ocurre en contextos auténticos. Las actividades del proyecto se realizan en el territorio Muinane: la maloka, la chagra, el río. No se aprende la lengua en un aula vacía, sino en las prácticas cotidianas de la comunidad.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 h-100 bg-white border rounded">
+              <h4><i class="bi bi-translate"></i> Educación Intercultural y Bilingüe (EIB)</h4>
+              <p>Schmelkes (2006) y la CGEIB (2013) definen la EIB como un enfoque que respeta la identidad cultural del educando, enseña competencias para participar en la sociedad mayoritaria y promueve el diálogo respetuoso entre culturas. El proyecto integra el Muinane como lengua de instrucción y el español como segunda lengua, en condiciones de equidad.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 h-100 bg-white border rounded">
+              <h4><i class="bi bi-phone"></i> Mediación TIC con soberanía comunitaria</h4>
+              <p>La tecnología no es un fin en sí misma. Siguiendo a Pineda (2016), las TIC se integran como herramientas al servicio del proyecto educativo definido por la comunidad. Se priorizan soluciones offline, de bajo costo y con control comunitario de los datos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="cards section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>¿Por qué este proyecto?</h2>
+        <p>Tres razones que explican la urgencia de actuar ahora</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <span>01</span>
+              <h4><a href="#about" class="stretched-link">La brecha generacional</a></h4>
+              <p>Los jóvenes Muinane tienen acceso a tecnología pero no a contenido en su propia lengua. La brecha no es de conectividad: es de presencia digital del saber propio.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <span>02</span>
+              <h4><a href="#services" class="stretched-link">El tiempo es un factor</a></h4>
+              <p>Cada año que pasa sin documentación participativa es un año de pérdida irreversible. Los portadores de saber mayores son el archivo vivo que este proyecto busca activar.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <span>03</span>
+              <h4><a href="#portfolio" class="stretched-link">La tecnología como aliada</a></h4>
+              <p>Usada con soberanía comunitaria, la tecnología puede preservar, difundir y revitalizar saberes. La comunidad decide qué se documenta, cómo y para quién.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Cards Section -->
+
+    <!-- Identificación del Problema Section -->
+    <section id="problema" class="section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Identificación del Problema</h2>
+        <p>Análisis de causas de la pérdida de la lengua Muinane en el resguardo Nonuya de Villazul mediante el diagrama de Ishikawa</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-12">
+            <p>La identificación del problema se realizó mediante el diagrama de causa-efecto (Ishikawa), herramienta que permite organizar y clasificar sistemáticamente los factores que originan una situación problemática (Ponce Talancón, 2007). Su aplicación facilitó el análisis estructurado de las causas críticas asociadas a la pérdida de la lengua materna Muinane en el resguardo indígena Nonuya de Villazul, departamento del Amazonas. El diagnóstico se construyó a partir de información primaria aportada por el docente indígena José Fernando Paki, miembro del grupo étnico Muinane y conocedor directo de la realidad sociolingüística del resguardo (comunicación personal, 31 de marzo de 2026).</p>
+            <p>Según Pineda Acero (2016), un problema surge cuando existe una diferencia entre lo que se espera y lo que realmente ocurre. En este caso: la lengua Muinane debería transmitirse de generación en generación dentro del resguardo. Eso no está ocurriendo.</p>
+          </div>
+
+          <div class="col-12" data-aos="zoom-in" data-aos-delay="150">
+            <h5 style="color: #2D5A27; margin-bottom: 16px;"><i class="bi bi-diagram-2 me-2"></i>Diagrama de Ishikawa — Causas de la pérdida de la lengua Muinane</h5>
+            <figure>
+              <img
+                src="assets/img/diagrama_ishikawa.jpg"
+                class="img-fluid rounded shadow"
+                alt="Diagrama Ishikawa — Pérdida de la lengua Muinane en el resguardo Nonuya de Villazul"
+                style="width: 100%; border: 2px solid #dee2e6;">
+              <figcaption class="mt-2 text-muted" style="font-size: 0.85rem; font-style: italic;">
+                Figura 2. Análisis de la pérdida de la lengua indígena Muinane en el resguardo Nonuya de Villazul. Elaboración propia a partir de información de José Fernando Paki, docente indígena Muinane (comunicación personal, 31 de marzo de 2026).
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <h5 style="color: #2D5A27; border-bottom: 2px solid #C8860A; padding-bottom: 8px; margin-bottom: 20px;">
+              <i class="bi bi-search me-2"></i>Causas identificadas desde fuentes académicas y primarias
+            </h5>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-3" style="background: #fff; border: 1px solid #e0d9ce; border-radius: 8px; border-left: 4px solid #dc3545;">
+                  <strong style="color: #dc3545;"><i class="bi bi-x-circle me-2"></i>Desplazamiento lingüístico</strong>
+                  <p style="font-size: 0.9rem; color: #555; margin: 8px 0 0;">El español domina la escuela, el comercio y la vida cotidiana del resguardo. La lengua indígena pierde valor social frente a la lengua dominante, proceso documentado por Fishman (1991) como la principal causa de extinción de lenguas minoritarias.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3" style="background: #fff; border: 1px solid #e0d9ce; border-radius: 8px; border-left: 4px solid #fd7e14;">
+                  <strong style="color: #fd7e14;"><i class="bi bi-book-x me-2"></i>Ausencia de materiales en lengua propia</strong>
+                  <p style="font-size: 0.9rem; color: #555; margin: 8px 0 0;">Existen pocos materiales educativos en Muinane. El currículo escolar opera principalmente en español, lo que excluye la lengua materna del espacio formal de aprendizaje donde los niños pasan la mayor parte de su tiempo.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3" style="background: #fff; border: 1px solid #e0d9ce; border-radius: 8px; border-left: 4px solid #fd7e14;">
+                  <strong style="color: #fd7e14;"><i class="bi bi-people-x me-2"></i>Ruptura intergeneracional</strong>
+                  <p style="font-size: 0.9rem; color: #555; margin: 8px 0 0;">La transmisión de la lengua de abuelos a nietos es cada vez menor. Los jóvenes migran a centros urbanos y pierden el contacto cotidiano con los portadores de saber. Sin ese contacto, la lengua deja de usarse antes de que los niños la adquieran.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3" style="background: #fff; border: 1px solid #e0d9ce; border-radius: 8px; border-left: 4px solid #8B4513;">
+                  <strong style="color: #8B4513;"><i class="bi bi-emoji-frown me-2"></i>Pérdida de autoestima lingüística</strong>
+                  <p style="font-size: 0.9rem; color: #555; margin: 8px 0 0;">Los jóvenes del resguardo perciben la lengua propia como un obstáculo para su integración en la economía y la sociedad dominante. La lengua indígena se asocia con atraso, no con identidad. Esa percepción, si no se interviene, hace imposible la revitalización.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3" style="background: #fff; border: 1px solid #e0d9ce; border-radius: 8px; border-left: 4px solid #1A6B8A;">
+                  <strong style="color: #1A6B8A;"><i class="bi bi-wifi-off me-2"></i>Brecha digital y ausencia en plataformas</strong>
+                  <p style="font-size: 0.9rem; color: #555; margin: 8px 0 0;">El Muinane no existe en el espacio digital. No hay aplicaciones, contenido en redes sociales ni plataformas en esa lengua. Los jóvenes consumen tecnología exclusivamente en español, lo que refuerza el desplazamiento lingüístico en el espacio donde más tiempo pasan.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3" style="background: #fff; border: 1px solid #e0d9ce; border-radius: 8px; border-left: 4px solid #1A6B8A;">
+                  <strong style="color: #1A6B8A;"><i class="bi bi-building-x me-2"></i>Débil aplicación de la Ley 1381</strong>
+                  <p style="font-size: 0.9rem; color: #555; margin: 8px 0 0;">La Ley de Lenguas Nativas de 2010 reconoce y protege las lenguas indígenas, pero su aplicación en el resguardo Nonuya de Villazul es insuficiente. La norma existe, pero los recursos, la formación docente y los mecanismos de seguimiento no han llegado al territorio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <blockquote style="border-left: 4px solid #2D5A27; padding: 16px 22px; background: #f8fdf8; border-radius: 0 8px 8px 0; font-style: italic; color: #555;">
+              "Una lengua no desaparece de golpe. Se va silenciando poco a poco: primero en la escuela, luego en el mercado, después en el hogar. Cuando los niños dejan de escucharla de sus abuelos, el proceso ya está muy avanzado." — A partir de Fishman (1991) y UNESCO (2003).
+            </blockquote>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Identificación del Problema Section -->
+
+    <!-- Marco Normativo Section -->
+    <section id="normativa" class="normativa section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Marco Legal y Documentos Rectores</h2>
+        <p>Referentes normativos del Ministerio de Educación Nacional que fundamentan este proyecto educativo</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 mb-5">
+          <div class="col-12">
+            <p>Los documentos rectores del sistema educativo colombiano constituyen la base de este proyecto. No se limitan a ser normas: orientan el rumbo, guían las decisiones y aseguran que la propuesta responda a las necesidades del contexto. Según Barbosa y de Moura (2016), el MEN los agrupa bajo el concepto de "base institucional" del diseño educativo. Un proyecto que ignore estos marcos tiene menos posibilidades de ser viable e impactar dentro del sistema educativo colombiano (Pineda Acero, 2016).</p>
+          </div>
+        </div>
+
+        <div class="row gy-4 mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h4 style="color: #2D5A27; border-bottom: 2px solid #C8860A; padding-bottom: 8px; margin-bottom: 20px;">
+              <i class="bi bi-diagram-3 me-2"></i>Modelo SKOPOS — Estructura del Proyecto
+            </h4>
+            <p>El proyecto se estructura bajo el modelo SKOPOS (Barbosa y de Moura, 2016), que permite visualizar el concepto, el plan de acción y el sistema de control, facilitando la organización y ejecución de la propuesta educativa.</p>
+            <figure class="mt-3">
+              <img
+                src="assets/img/diagrama_skopos.jpg"
+                class="img-fluid rounded shadow"
+                alt="Modelo SKOPOS — Estructura del Proyecto Muinane"
+                style="width: 100%; border: 2px solid #dee2e6;">
+              <figcaption class="mt-2 text-muted" style="font-size: 0.85rem; font-style: italic;">
+                Figura 1. Estructura del proyecto desde el modelo SKOPOS. Elaboración propia (Barbosa y de Moura, 2016).
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12">
+            <h4 style="color: #2D5A27; border-bottom: 2px solid #C8860A; padding-bottom: 8px; margin-bottom: 24px;">
+              <i class="bi bi-bank me-2"></i>Leyes y Normativas Aplicables
+            </h4>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4 h-100" style="background: #f8fdf8; border: 1px solid #d1e7dd; border-radius: 8px; border-top: 4px solid #2D5A27;">
+              <div class="d-flex align-items-center mb-3">
+                <div style="background: #2D5A27; color: #fff; border-radius: 6px; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; margin-right: 12px;">1994</div>
+                <strong>Ley 115</strong>
+              </div>
+              <p style="font-size: 0.92rem; color: #444; margin: 0;">Ley General de Educación. Define los fines y objetivos que deben guiar el proceso educativo colombiano. Establece que la educación debe responder a las necesidades del país y de sus comunidades, incluyendo las indígenas.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4 h-100" style="background: #f8fdf8; border: 1px solid #d1e7dd; border-radius: 8px; border-top: 4px solid #2D5A27;">
+              <div class="d-flex align-items-center mb-3">
+                <div style="background: #2D5A27; color: #fff; border-radius: 6px; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; margin-right: 12px;">1992</div>
+                <strong>Ley 30</strong>
+              </div>
+              <p style="font-size: 0.92rem; color: #444; margin: 0;">Regula la educación superior en Colombia. Define su organización, principios y objetivos. Establece la autonomía universitaria y busca garantizar la calidad y el acceso a este nivel educativo respondiendo a las necesidades sociales.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4 h-100" style="background: #fff8ec; border: 1px solid #ffe0b2; border-radius: 8px; border-top: 4px solid #C8860A;">
+              <div class="d-flex align-items-center mb-3">
+                <div style="background: #C8860A; color: #fff; border-radius: 6px; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; margin-right: 12px;">2006</div>
+                <strong>Ley 1098</strong>
+              </div>
+              <p style="font-size: 0.92rem; color: #444; margin: 0;">Código de Infancia y Adolescencia. Protege los derechos de los niños y adolescentes. Establece responsabilidades para la familia, la sociedad y el Estado, y promueve el respeto por la dignidad y la participación de los menores.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4 h-100" style="background: #fff8ec; border: 1px solid #ffe0b2; border-radius: 8px; border-top: 4px solid #C8860A;">
+              <div class="d-flex align-items-center mb-3">
+                <div style="background: #C8860A; color: #fff; border-radius: 6px; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; margin-right: 12px;">2016</div>
+                <strong>Ley 1804</strong>
+              </div>
+              <p style="font-size: 0.92rem; color: #444; margin: 0;">Política de Estado para el desarrollo integral de la primera infancia "De Cero a Siempre". Define acciones articuladas entre el Estado, la familia y la sociedad para garantizar atención, cuidado y educación de calidad desde los primeros años.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4 h-100" style="background: #fff5f5; border: 1px solid #f5c6c6; border-radius: 8px; border-top: 4px solid #8B4513;">
+              <div class="d-flex align-items-center mb-3">
+                <div style="background: #8B4513; color: #fff; border-radius: 6px; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; margin-right: 12px;">2010</div>
+                <strong>Ley 1381</strong>
+              </div>
+              <p style="font-size: 0.92rem; color: #444; margin: 0;"><strong>Ley de Lenguas Nativas.</strong> Garantiza el reconocimiento, protección y fortalecimiento de los derechos lingüísticos de los grupos étnicos. Es el principal respaldo legal de este proyecto para la preservación del Muinane.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4 h-100" style="background: #f0f4ff; border: 1px solid #c5d0f5; border-radius: 8px; border-top: 4px solid #1A6B8A;">
+              <div class="d-flex align-items-center mb-3">
+                <div style="background: #1A6B8A; color: #fff; border-radius: 6px; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; margin-right: 12px;">2015</div>
+                <strong>Decreto 1075</strong>
+              </div>
+              <p style="font-size: 0.92rem; color: #444; margin: 0;">Decreto Único Reglamentario del Sector Educación. Regula el uso pedagógico de las TIC, la inclusión y equidad, y los lineamientos curriculares. Garantiza que la comunidad pueda fortalecer su identidad dentro del sistema educativo.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row gy-4 mt-2" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-6">
+            <div class="p-4" style="background: #f8f9fa; border-radius: 8px; border-left: 5px solid #2D5A27; height: 100%;">
+              <h5 style="color: #2D5A27;"><i class="bi bi-journal-check me-2"></i>Plan Nacional Decenal de Educación 2016–2026</h5>
+              <p style="font-size: 0.92rem; color: #444; margin-top: 12px;">El PNDE define los grandes desafíos del sistema educativo. Este proyecto se conecta con tres de sus líneas prioritarias: uso pedagógico de las TIC, inclusión y equidad, y fortalecimiento de la educación intercultural. Los fines de la educación definidos en las normas vigentes son obligatorios para todos los proyectos educativos.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4" style="background: #f8f9fa; border-radius: 8px; border-left: 5px solid #C8860A; height: 100%;">
+              <h5 style="color: #C8860A;"><i class="bi bi-mortarboard me-2"></i>Proyecto Educativo Institucional (PEI)</h5>
+              <p style="font-size: 0.92rem; color: #444; margin-top: 12px;">El PEI es la carta de navegación de cada institución educativa (Álvarez, 2002). Antes de formular cualquier proyecto, hay que revisarlo. La propuesta Muinane se articula con los principios de identidad cultural, pertinencia territorial y educación propia que los resguardos definen en sus proyectos educativos comunitarios.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Marco Normativo Section -->
+
+    <!-- Beneficiarios Section (Nueva) -->
+    <section id="beneficiarios" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Beneficiarios Directos e Indirectos</h2>
+        <p>Cuantificación de la población atendida por el proyecto</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="p-4 text-center bg-white rounded shadow h-100">
+              <i class="bi bi-people" style="font-size: 2.5rem; color: #2D5A27;"></i>
+              <h3 class="mt-3">120</h3>
+              <p class="lead">Estudiantes directos</p>
+              <hr>
+              <p><strong>Género:</strong> 65 niñas, 55 niños<br>
+              <strong>Grados:</strong> Transición a 5° de primaria<br>
+              <strong>Edades:</strong> 5 a 14 años</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 text-center bg-white rounded shadow h-100">
+              <i class="bi bi-mortarboard" style="font-size: 2.5rem; color: #C8860A;"></i>
+              <h3 class="mt-3">8</h3>
+              <p class="lead">Docentes</p>
+              <hr>
+              <p><strong>De ellos:</strong> 3 docentes bilingües (Muinane-español)<br>
+              <strong>Formación:</strong> 5 normalistas, 3 licenciados<br>
+              <strong>Vinculación:</strong> Todos son indígenas o residentes de larga data en el resguardo</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 text-center bg-white rounded shadow h-100">
+              <i class="bi bi-tree" style="font-size: 2.5rem; color: #8B4513;"></i>
+              <h3 class="mt-3">10</h3>
+              <p class="lead">Sabedores mayores</p>
+              <hr>
+              <p><strong>Rango etario:</strong> 55 a 82 años<br>
+              <strong>Roles:</strong> 8 hombres, 2 mujeres. Custodios del conocimiento oral, medicinal y ceremonial.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded shadow h-100">
+              <h4><i class="bi bi-house-heart"></i> Padres de familia</h4>
+              <p><strong>80 familias</strong> del resguardo Nonuya de Villazul participan activamente en actividades de transmisión cultural, talleres de sensibilización y apoyo logístico (alimentación, transporte, permisos).</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded shadow h-100">
+              <h4><i class="bi bi-globe2"></i> Beneficiarios indirectos</h4>
+              <p>Toda la comunidad del resguardo (aproximadamente <strong>350 personas</strong>), más otras comunidades Muinane de Amazonas y Caquetá que podrán acceder a los materiales digitales producidos, y organizaciones indígenas que trabajan en revitalización lingüística a nivel nacional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section (Objetivos + Metas medibles) -->
+    <section id="services" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Objetivos del Proyecto</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <div class="p-4" style="background: #f8fdf8; border-left: 5px solid #2D5A27; border-radius: 0 8px 8px 0;">
+              <h4 style="color: #2D5A27; margin-bottom: 14px;"><i class="bi bi-bullseye me-2"></i>Objetivo General</h4>
+              <p style="font-size: 1rem; line-height: 1.8; margin: 0; color: #333;">
+                Fortalecer la transmisión y uso de la lengua materna Muinane en el resguardo Nonuya de Villazul, Amazonas, mediante el diseño e implementación de una estrategia educativa mediada por TIC que integre los saberes de los portadores de conocimiento ancestral con recursos digitales producidos y controlados por la propia comunidad, contribuyendo a la preservación de su identidad cultural y a la revitalización lingüística intergeneracional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Objetivos Específicos con Metas Medibles</h2>
+          <p>Cada objetivo tiene una unidad de medida y un plazo de cumplimiento</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-mic"></i></div>
+              <div>
+                <h4 class="title">Archivo oral Muinane</h4>
+                <p class="description"><strong>Meta:</strong> Documentar <strong>50 relatos orales</strong> (cuentos, cantos, mitos, procedimientos medicinales) en lengua Muinane, con audio y video, en los primeros <strong>6 meses</strong> del proyecto, contando con el consentimiento previo de cada sabedor y su familia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-book"></i></div>
+              <div>
+                <h4 class="title">Material educativo bilingüe</h4>
+                <p class="description"><strong>Meta:</strong> Producir <strong>3 cartillas bilingües (Muinane-español)</strong> de 20 páginas cada una, sobre temas definidos por la comunidad (vocabulario básico, plantas medicinales, normas de convivencia), y distribuir<strong> 120 ejemplares</strong> a los estudiantes antes de diciembre de 2026.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+              <div>
+                <h4 class="title">Red intergeneracional</h4>
+                <p class="description"><strong>Meta:</strong> Conectar a <strong>30 jóvenes</strong> con <strong>10 sabedores</strong> mediante encuentros quincenales (2 horas) durante <strong>9 meses</strong>, registrando al menos <strong>20 sesiones</strong> de diálogo y transmisión oral que queden archivadas en formato digital accesible offline.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
+              <div>
+                <h4 class="title">App de lengua Muinane</h4>
+                <p class="description"><strong>Meta:</strong> Desarrollar una <strong>aplicación móvil</strong> que contenga <strong>500 entradas de vocabulario</strong> con pronunciación en audio, <strong>10 cuentos narrados</strong> y un juego interactivo de preguntas. La app debe estar funcional y descargable (sin necesidad de internet) en un plazo de <strong>12 meses</strong>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
+              <div>
+                <h4 class="title">Soberanía digital comunitaria</h4>
+                <p class="description"><strong>Meta:</strong> Instalar un <strong>servidor comunitario offline</strong> (capacidad mínima 2TB) en la escuela del resguardo antes del mes <strong>9</strong>, donde se alojen todos los archivos y la app, con protocolos de respaldo trimestral y un comité de 3 miembros de la comunidad encargado de la gestión de permisos de acceso.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-mortarboard"></i></div>
+              <div>
+                <h4 class="title">Formación de docentes locales</h4>
+                <p class="description"><strong>Meta:</strong> Capacitar a <strong>8 docentes</strong> y <strong>5 jóvenes</strong> de la comunidad en producción de contenido digital (grabación, edición de audio/video, uso de la app) mediante un taller de <strong>40 horas</strong> distribuidas en <strong>4 meses</strong>. Al finalizar, cada docente debe haber producido al menos <strong>2 recursos digitales</strong> en Muinane.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Metodología Detallada (Nueva) -->
+    <section id="metodologia" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Metodología Detallada</h2>
+        <p>Estrategias, actividades, recursos y tiempos para cada objetivo</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="p-4 bg-white border rounded">
+              <h4><i class="bi bi-diagram-3"></i> Estrategia general: Investigación-acción participativa</h4>
+              <p>Se sigue el ciclo: diagnóstico participativo → diseño conjunto → pilotaje → evaluación y ajuste → implementación ampliada. Todos los pasos se acuerdan en asamblea comunitaria.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 bg-light rounded h-100">
+              <h5><i class="bi bi-mic"></i> Archivo oral</h5>
+              <ul>
+                <li><strong>Técnica:</strong> Círculos de la palabra con grabación audiovisual.</li>
+                <li><strong>Frecuencia:</strong> 2 sesiones semanales de 2 horas.</li>
+                <li><strong>Herramientas:</strong> Grabadora Zoom H1n, cámara réflex básica, trípode.</li>
+                <li><strong>Facilitador:</strong> Sabedor mayor + joven que opera la cámara (aprendizaje peer-to-peer).</li>
+                <li><strong>Registro:</strong> Cada sesión produce un archivo de audio/video con metadatos (fecha, narrador, tema, consentimiento firmado).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 bg-light rounded h-100">
+              <h5><i class="bi bi-book"></i> Materiales bilingües</h5>
+              <ul>
+                <li><strong>Técnica:</strong> Talleres de codiseño con maestros, sabedores y diseñador gráfico.</li>
+                <li><strong>Pasos:</strong> Selección de vocabulario → transcripción y traducción colectiva → ilustración participativa (niños dibujan) → maquetación → impresión.</li>
+                <li><strong>Recursos:</strong> Computadora portátil, impresora láser, papel bond, materiales de dibujo.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 bg-light rounded h-100">
+              <h5><i class="bi bi-phone"></i> App y plataforma digital</h5>
+              <ul>
+                <li><strong>Técnica:</strong> Desarrollo iterativo con pruebas de usabilidad en la comunidad.</li>
+                <li><strong>Actores:</strong> Ingeniero de software (James Díaz) + jóvenes formados como beta testers.</li>
+                <li><strong>Infraestructura:</strong> Servidor local con Raspberry Pi 4 o mini PC, panel de administración simple.</li>
+                <li><strong>Contenido:</strong> Los audios y videos producidos se integran a la app mediante scripts automáticos.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 bg-light rounded h-100">
+              <h5><i class="bi bi-people"></i> Encuentros intergeneracionales</h5>
+              <ul>
+                <li><strong>Técnica:</strong> Diálogo estructurado con preguntas guía (historia de vida, significado de palabras, relatos del territorio).</li>
+                <li><strong>Lugar:</strong> Maloka comunitaria o casa del sabedor.</li>
+                <li><strong>Rol del docente:</strong> Toma notas, graba, modera el respeto de turnos.</li>
+                <li><strong>Producto:</strong> Al final de cada encuentro, se genera una "cápsula de saber" (audio + transcripción bilingüe).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluación (Nueva) -->
+    <section id="evaluacion" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Evaluación del Proyecto</h2>
+        <p>Criterios, instrumentos, frecuencias y responsables</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="table-responsive">
+              <table class="table table-bordered bg-white">
+                <thead class="table-success">
+                  <tr><th>Criterio de éxito</th><th>Indicador</th><th>Instrumento</th><th>Frecuencia</th><th>Responsable</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Documentación oral</td><td>N° de relatos grabados (meta: 50)</td><td>Lista de verificación, bitácora de archivos</td><td>Mensual</td><td>Luis González</td></tr>
+                  <tr><td>Uso de materiales en el aula</td><td>% de docentes que usan cartillas (meta: 100%)</td><td>Observación de clase, encuesta a estudiantes</td><td>Trimestral</td><td>Fernando Paki</td></tr>
+                  <tr><td>Frecuencia de uso de la app</td><td>N° de descargas e interacciones registradas en el servidor local</td><td>Registro automático de la app (anónimo)</td><td>Quincenal</td><td>James Díaz</td></tr>
+                  <tr><td>Participación de sabedores</td><td>Asistencia ≥ 80% a los círculos de la palabra</td><td>Lista de asistencia firmada</td><td>Semanal</td><td>Docente del grado</td></tr>
+                  <tr><td>Autoestima lingüística</td><td>Cambio en percepción sobre la lengua (pre y post prueba)</td><td>Cuestionario adaptado a niños (escala de Likert visual)</td><td>Inicio y final del proyecto</td><td>Equipo evaluador externo</td></tr>
+                  <tr><td>Sostenibilidad técnica</td><td>Servidor funcionando sin interrupciones > 48h</td><td>Monitoreo de uptime, respaldos realizados</td><td>Diario</td><td>Comité digital comunitario</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-3"><strong>Comunicación de resultados:</strong> Informes trimestrales a la asamblea comunitaria, boletín digital para aliados, presentación en encuentros de educación intercultural.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impacto Esperado y Perspectivas de Continuidad (Nueva) -->
+    <section id="impacto" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Impacto Esperado y Sostenibilidad</h2>
+        <p>Aprendizajes, transformaciones y estrategias de continuidad</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="p-4 bg-white border rounded h-100">
+              <h4><i class="bi bi-stars"></i> Impactos esperados</h4>
+              <ul>
+                <li><strong>Lingüístico:</strong> Al menos 100 palabras nuevas en el vocabulario activo de los niños; 20 frases cortas en Muinane de uso cotidiano.</li>
+                <li><strong>Cultural:</strong> Revaloración del conocimiento de los sabedores por parte de los jóvenes; los materiales digitales se usan como orgullo identitario en la escuela.</li>
+                <li><strong>Comunitario:</strong> Mayor cohesión intergeneracional; los padres recuperan la confianza en transmitir la lengua en el hogar.</li>
+                <li><strong>Digital:</strong> La comunidad opera su propio servidor y produce contenido sin depender de agentes externos.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 bg-white border rounded h-100">
+              <h4><i class="bi bi-infinity"></i> Estrategias de sostenibilidad</h4>
+              <ul>
+                <li><strong>Curricularización:</strong> Los materiales producidos se incorporan al Plan de Área de Lengua Castellana y al Proyecto Educativo Institucional, garantizando su uso más allá del financiamiento.</li>
+                <li><strong>Capacidades locales:</strong> Los 8 docentes y 5 jóvenes formados continúan como formadores de nuevas generaciones.</li>
+                <li><strong>Red de replicación:</strong> Se firman acuerdos con otras 3 comunidades Muinane de Caquetá para compartir la metodología y la app.</li>
+                <li><strong>Gestión de recursos:</strong> El comité comunitario postulará el proyecto a convocatorias del Ministerio de Cultura (Programa de Estímulos) y fondos de cooperación internacional (UNESCO, Survival International).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <div class="alert alert-success">
+              <i class="bi bi-check-circle"></i> <strong>Compromiso:</strong> Todos los materiales digitales y físicos quedarán en propiedad de la comunidad Muinane, con licencia de uso compartido bajo sus propios términos (protocolo comunitario de acceso).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+      <img src="assets/img/cta-bg.jpg" alt="">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>La lengua Muinane tiene algo que ningún archivo puede reemplazar</h3>
+              <p>Tiene hablantes. Mientras haya personas que la usen, transmitan y enseñen, la lengua vive. Este proyecto existe para que esas personas tengan las herramientas digitales que necesitan, en sus propios términos.</p>
+              <a class="cta-btn" href="#contact">Únete al proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section (Actividades visuales) -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Actividades del Proyecto</h2>
+        <p>Las acciones concretas que se desarrollan con la comunidad Muinane</p>
+      </div>
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Todas</li>
+            <li data-filter=".filter-app">Digital</li>
+            <li data-filter=".filter-product">Comunidad</li>
+            <li data-filter=".filter-branding">Educación</li>
+            <li data-filter=".filter-books">Archivo</li>
+          </ul>
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="App Muinane">
+                <div class="portfolio-info">
+                  <h4>App Muinane</h4>
+                  <p>Aplicación móvil de vocabulario y pronunciación en lengua Muinane</p>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" title="App Muinane" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="Círculos de saberes">
+                <div class="portfolio-info">
+                  <h4>Círculos de saberes</h4>
+                  <p>Sesiones con sabedores mayores para documentar conocimiento oral</p>
+                  <a href="assets/img/portfolio/portfolio-10.jpg" title="Círculos de saberes" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="Cartillas bilingües">
+                <div class="portfolio-info">
+                  <h4>Cartillas bilingües</h4>
+                  <p>Material pedagógico en Muinane y español para escuelas comunitarias</p>
+                  <a href="assets/img/portfolio/portfolio-7.jpg" title="Cartillas bilingues" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="Archivo oral">
+                <div class="portfolio-info">
+                  <h4>Archivo oral digital</h4>
+                  <p>Grabaciones de relatos, cantos y vocabularios de los sabedores Muinane</p>
+                  <a href="assets/img/portfolio/portfolio-4.jpg" title="Archivo oral" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="Red digital comunitaria">
+                <div class="portfolio-info">
+                  <h4>Red digital comunitaria</h4>
+                  <p>Plataforma de comunicación entre jóvenes y sabedores de la comunidad</p>
+                  <a href="assets/img/portfolio/portfolio-2.jpg" title="Red digital" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="Cartografía social">
+                <div class="portfolio-info">
+                  <h4>Cartografía social</h4>
+                  <p>Mapas digitales del territorio Muinane elaborados por la propia comunidad</p>
+                  <a href="assets/img/portfolio/portfolio-11.jpg" title="Cartografia social" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="Formación docente">
+                <div class="portfolio-info">
+                  <h4>Formación docente local</h4>
+                  <p>Talleres para maestros comunitarios como productores de contenido digital</p>
+                  <a href="assets/img/portfolio/portfolio-8.jpg" title="Formacion docente" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="Banco de relatos">
+                <div class="portfolio-info">
+                  <h4>Banco de relatos Muinane</h4>
+                  <p>Repositorio de cuentos y mitos tradicionales en formato digital y audio</p>
+                  <a href="assets/img/portfolio/portfolio-5.jpg" title="Banco de relatos" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="Canal YouTube Muinane">
+                <div class="portfolio-info">
+                  <h4>Canal YouTube Muinane</h4>
+                  <p>Producción de videos en lengua Muinane para audiencias jóvenes dentro y fuera del territorio</p>
+                  <a href="assets/img/portfolio/portfolio-3.jpg" title="Canal YouTube" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="Medicina ancestral">
+                <div class="portfolio-info">
+                  <h4>Vocabulario de medicina ancestral</h4>
+                  <p>Documentación participativa del conocimiento herbolario y de sanación del pueblo Muinane</p>
+                  <a href="assets/img/portfolio/portfolio-12.jpg" title="Medicina ancestral" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="Identidad visual">
+                <div class="portfolio-info">
+                  <h4>Identidad visual del proyecto</h4>
+                  <p>Diseño gráfico con elementos propios de la iconografía y artesanía Muinane</p>
+                  <a href="assets/img/portfolio/portfolio-9.jpg" title="Identidad visual" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="Diccionario Muinane">
+                <div class="portfolio-info">
+                  <h4>Diccionario digital Muinane</h4>
+                  <p>Base de datos léxica con pronunciación, ejemplos de uso y contexto cultural para cada entrada</p>
+                  <a href="assets/img/portfolio/portfolio-6.jpg" title="Diccionario Muinane" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Ver detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cronograma Section (mejorado) -->
+    <section id="cronograma" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Cronograma de Actividades</h2>
+        <p>Fases, meses y productos entregables</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-12">
+            <div class="table-responsive">
+              <table class="table table-bordered bg-white">
+                <thead>
+                  <tr><th>Fase</th><th>Meses</th><th>Actividades clave</th><th>Productos</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1. Diagnóstico participativo</td><td>1-2</td><td>Asambleas, mapeo de sabedores, encuesta a jóvenes, definición de protocolos de consentimiento</td><td>Informe de necesidades, base de datos de sabedores, acuerdos comunitarios</td></tr>
+                  <tr><td>2. Equipamiento y formación básica</td><td>2-3</td><td>Adquisición de equipos (grabadoras, cámaras, servidor), taller de 20h para docentes en uso de herramientas</td><td>Kit tecnológico instalado, 8 docentes capacitados en operación básica</td></tr>
+                  <tr><td>3. Documentación oral intensiva</td><td>3-8</td><td>50 sesiones de grabación con sabedores, transcripción y traducción colectiva</td><td>Archivo de 50 relatos (audio/video), primeras 2 cartillas bilingües</td></tr>
+                  <tr><td>4. Desarrollo de app y servidor</td><td>6-12</td><td>Programación de la app, alimentación de base de datos, instalación del servidor y pruebas comunitarias</td><td>App funcional, servidor en operación, manual de uso en Muinane</td></tr>
+                  <tr><td>5. Implementación en el aula</td><td>9-15</td><td>Uso de cartillas y app en las clases, seguimiento mensual, ajustes</td><td>Registro de uso, informes de avance, 3ra cartilla</td></tr>
+                  <tr><td>6. Evaluación y sostenibilidad</td><td>15-18</td><td>Medición de impacto, formación de comité comunitario, plan de réplica, postulación a fondos</td><td>Informe final, comité constituido, alianzas con 2 comunidades vecinas</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Financiamiento Section (mejorado) -->
+    <section id="financiamiento" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Financiamiento y Presupuesto</h2>
+        <p>Fuentes de financiación y estimación de costos</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded shadow h-100">
+              <h4><i class="bi bi-cash-stack"></i> Presupuesto estimado (COP)</h4>
+              <ul>
+                <li>Equipos de grabación (2 grabadoras, 1 cámara, micrófonos): $4.500.000</li>
+                <li>Servidor comunitario (Raspberry Pi o mini PC + discos duros 2TB): $2.000.000</li>
+                <li>Desarrollo de app (programación, diseño UX): $8.000.000</li>
+                <li>Impresión de 120 cartillas bilingües (3 títulos): $3.600.000</li>
+                <li>Honorarios docentes y talleristas (6 personas x 3 meses): $12.000.000</li>
+                <li>Materiales de oficina, papelería, transporte fluvial: $3.000.000</li>
+                <li>Evaluación externa y sistematización: $4.000.000</li>
+                <li><strong>Total estimado: $37.100.000 COP</strong> (aproximadamente 9.000 USD)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded shadow h-100">
+              <h4><i class="bi bi-building"></i> Posibles fuentes de financiación</h4>
+              <ul>
+                <li>Convocatoria “Proyectos de Innovación Educativa con TIC” del MEN (hasta $50M COP).</li>
+                <li>Fondo de Desarrollo Étnico del Ministerio del Interior.</li>
+                <li>Survival International – Grants for Indigenous Language Revitalization.</li>
+                <li>UNESCO – Participation Programme 2026.</li>
+                <li>Alianza con la Universidad Nacional (sede Amazonia) para cofinanciación.</li>
+                <li>Aportes comunitarios (mano de obra, alimentación, hospedaje).</li>
+              </ul>
+              <p class="mt-3 text-muted"><em>Nota: El proyecto postulará a mínimo 3 convocatorias en 2026. En caso de no obtener fondos externos, se priorizará la fase de documentación oral con recursos mínimos (solo grabadoras y cartillas fotocopiadas).</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vulnerabilidad Section (ya existente) -->
+    <section id="vulnerabilidad" class="vulnerabilidad section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Factores Restrictivos y Riesgos</h2>
+        <p>Matriz de vulnerabilidad del proyecto de fortalecimiento de la lengua Muinane mediante TIC — Resguardo Nonuya de Villazul, Amazonas</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+          <div class="col-12">
+            <p>La formulación de un proyecto educativo mediado por tecnología no comienza con la solución, sino con la comprensión profunda del problema. Reconocer los riesgos que pueden afectar su desarrollo es tan importante como definir sus objetivos...</p>
+          </div>
+          <div class="col-12 text-center" data-aos="zoom-in" data-aos-delay="150">
+            <figure>
+              <img src="assets/img/matriz_de_vulnerabilidad.jpg" class="img-fluid rounded shadow" alt="Matriz de vulnerabilidad">
+              <figcaption class="mt-3 text-muted">Figura 1. Matriz de vulnerabilidad del Proyecto Muinane.</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 h-100" style="background: #fff5f5; border-left: 5px solid #dc3545; border-radius: 0 8px 8px 0;">
+              <h4 style="color: #dc3545;"><i class="bi bi-exclamation-triangle-fill me-2"></i>Riesgos Muy Graves</h4>
+              <ul><li>Extinción irreversible de la lengua Muinane.</li><li>Ruptura total en la transmisión intergeneracional.</li></ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 h-100" style="background: #fff8ec; border-left: 5px solid #fd7e14; border-radius: 0 8px 8px 0;">
+              <h4 style="color: #fd7e14;"><i class="bi bi-exclamation-circle-fill me-2"></i>Riesgos Importantes</h4>
+              <ul><li>Ausencia de materiales educativos en lengua propia.</li><li>Falta de formación docente.</li><li>Desalineación curricular.</li><li>Brecha digital.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Preguntas </span><strong>Frecuentes</strong></h3>
+              <p>Respuestas a las inquietudes más comunes sobre el proyecto y el pueblo Muinane.</p>
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>¿Qué es la lengua Muinane y dónde se habla?</span></h3>
+                <div class="faq-content"><p>El Muinane es una lengua amazónica perteneciente a la familia lingüística Bora, hablada principalmente en los departamentos de Amazonas y Caquetá, Colombia. Tiene aproximadamente 3.000 hablantes activos y está clasificada por la UNESCO como lengua vulnerable.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>¿Por qué usar tecnología y no métodos de enseñanza tradicionales?</span></h3>
+                <div class="faq-content"><p>La tecnología complementa los métodos orales. Sirve para extender el aprendizaje en el tiempo y el espacio, conectar a jóvenes que migraron a ciudades con sus comunidades, y preservar grabaciones de sabedores mayores.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>¿La comunidad Muinane controla los contenidos que se producen?</span></h3>
+                <div class="faq-content"><p>Sí. Todos los archivos, grabaciones y materiales son propiedad de la comunidad. Se utilizan protocolos de consentimiento libre, previo e informado.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>¿Cómo puede participar una persona o institución externa?</span></h3>
+                <div class="faq-content"><p>Como aliado técnico o financiador, siempre bajo los protocolos de la comunidad. No se acepta extracción de datos sin devolución comunitaria.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>¿Qué pasa con los saberes que no se pueden digitalizar?</span></h3>
+                <div class="faq-content"><p>La comunidad decide qué se documenta y qué no. Algunos conocimientos tienen restricciones de transmisión. El proyecto respeta esas decisiones.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Equipo del Proyecto</h2>
+        <p>Grupo 5 — Docentes, investigadores y miembros de la comunidad Muinane</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="Luis Alejandro González"></div>
+              <div class="member-info">
+                <h4>Luis Alejandro González Soto</h4>
+                <span>Ing. Sistemas — ID: 001142837</span>
+                <p>Lidera el proceso de documentación de la lengua Muinane con los sabedores.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/person/person-m-6.webp" class="img-fluid" alt="James Wilmer Díaz"></div>
+              <div class="member-info">
+                <h4>James Wilmer Díaz Vargas</h4>
+                <span>Ing. Sistemas e Informática — ID: 001136752</span>
+                <p>Diseña y mantiene la infraestructura tecnológica del proyecto.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/person/person-m-8.webp" class="img-fluid" alt="Fernando José Paki"></div>
+              <div class="member-info">
+                <h4>Fernando José Paki</h4>
+                <span>Docente Indígena Muinane</span>
+                <p>Colaborador del diseño de experiencias de aprendizaje situado y fuente primaria del proyecto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="container">
       <div class="row gy-3">
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
+            <h4>Ubicación</h4>
+            <p>Amazonas, Colombia</p>
+            <p>Territorio Muinane</p>
           </div>
-
         </div>
-
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
-            <h4>Contact</h4>
-            <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
-            </p>
+            <h4>Contacto</h4>
+            <p><strong>Teléfono:</strong> <span>+57 (8) 000 0000</span><br>
+            <strong>Correo:</strong> <span>proyectomuinane@correo.com</span></p>
           </div>
         </div>
-
         <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
+          <i class="bi bi-info-circle icon"></i>
           <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
-            </p>
+            <h4>Sobre el proyecto</h4>
+            <p>Proyecto educativo mediado por TIC para la recuperación de la lengua materna indígena Muinane. Grupo 5, 2025.</p>
           </div>
         </div>
-
         <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
+          <h4>Síguenos</h4>
           <div class="social-links d-flex">
             <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -166,30 +1194,17 @@
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-
       </div>
     </div>
-
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Amoeba</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div>
+      <p>© <span>2025</span> <strong class="px-1 sitename">Proyecto Muinane</strong> <span>— Todos los derechos reservados</span></p>
+      <div class="credits">Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -197,10 +1212,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
