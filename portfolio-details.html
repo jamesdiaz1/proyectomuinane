@@ -4,424 +4,356 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Referencias y Agradecimientos — Proyecto Muinane</title>
-  <meta name="description" content="Referencias bibliográficas (APA 7ª ed. con sangría francesa) y agradecimientos del proyecto educativo mediado por TIC para la recuperación de la lengua Muinane.">
+  <title>Informe — Proyecto Muinane</title>
+  <meta name="description" content="Informe final del proyecto educativo mediado por TIC para la recuperación de la lengua materna indígena Muinane. Introducción, conclusiones, referencias y agradecimientos.">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    :root {
-      --tierra: #7B3F1E;
-      --selva: #2D5A27;
-      --ocre: #B8860B;
-      --crema: #FAF6EF;
-      --texto: #2C2416;
-      --gris: #6B6357;
-    }
-
-    body {
-      font-family: 'Source Serif 4', Georgia, serif;
-      background-color: var(--crema);
-      color: var(--texto);
-    }
-
-    /* Hero banner */
-    .ref-hero {
-      background: linear-gradient(135deg, #1a3a16 0%, #2D5A27 50%, #4a7c3f 100%);
-      padding: 80px 0 60px;
-      position: relative;
-      overflow: hidden;
-    }
-    .ref-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-    .ref-hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 700;
-      color: #fff;
-      line-height: 1.2;
-    }
-    .ref-hero p {
-      color: rgba(255,255,255,0.82);
-      font-size: 1.05rem;
-      font-style: italic;
-    }
-    .ornament {
-      display: block;
-      width: 60px;
-      height: 3px;
-      background: var(--ocre);
-      margin: 20px auto 0;
-      border-radius: 2px;
-    }
-
-    /* Sections */
-    .ref-section {
-      padding: 64px 0;
-    }
-    .ref-section + .ref-section {
-      border-top: 1px solid #e0d9ce;
-    }
-    .section-label {
-      font-family: 'Source Serif 4', serif;
-      font-size: 0.78rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gris);
-      margin-bottom: 8px;
-    }
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      font-weight: 600;
-      color: var(--selva);
-      margin-bottom: 32px;
-      line-height: 1.3;
-    }
-
-    /* Reference groups */
-    .ref-group {
-      margin-bottom: 36px;
-    }
-    .ref-group-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--tierra);
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--ocre);
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .ref-group-title i { font-size: 1rem; color: var(--ocre); }
-
-    /* ESTILO PARA SANGRÍA FRANCESA (APA 7) */
-    .ref-item {
-      padding: 8px 16px 8px 32px;   /* Espacio izquierdo adicional */
-      margin-bottom: 12px;
-      font-size: 0.935rem;
-      line-height: 1.6;
-      color: var(--texto);
-      background: #fff;
-      border-radius: 0 6px 6px 0;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      /* Sangría francesa: primera línea normal, las siguientes sangradas */
-      text-indent: -1.8em;   /* Desplaza la primera línea hacia la izquierda */
-      padding-left: 3.8em;   /* Compensa el desplazamiento para que el texto quede alineado */
-      border-left: 3px solid #e0d9ce;
-    }
-    /* Ajuste para pantallas pequeñas */
-    @media (max-width: 576px) {
-      .ref-item {
-        text-indent: -1.2em;
-        padding-left: 2.8em;
-      }
-    }
-    .ref-item:hover {
-      border-left-color: var(--selva);
-      box-shadow: 0 2px 12px rgba(45,90,39,0.08);
-    }
-    .ref-item em, .ref-item i {
-      font-style: italic;
-    }
-    .ref-item a {
-      color: var(--selva);
-      word-break: break-all;
-      font-size: 0.87rem;
-    }
-
-    /* Thank you card (sin cambios relevantes) */
-    .thanks-card {
-      background: linear-gradient(135deg, #1a3a16 0%, #2D5A27 100%);
-      border-radius: 16px;
-      padding: 56px 48px;
-      position: relative;
-      overflow: hidden;
-      color: #fff;
-    }
-    .thanks-card::before {
-      content: '"';
-      position: absolute;
-      top: -20px;
-      left: 24px;
-      font-family: 'Playfair Display', serif;
-      font-size: 180px;
-      color: rgba(255,255,255,0.06);
-      line-height: 1;
-      pointer-events: none;
-    }
-    .thanks-card .thanks-icon {
-      width: 64px;
-      height: 64px;
-      background: rgba(255,255,255,0.12);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.8rem;
-      margin-bottom: 28px;
-    }
-    .thanks-card h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 24px;
-      line-height: 1.3;
-    }
-    .thanks-card p {
-      font-size: 1.05rem;
-      line-height: 1.85;
-      color: rgba(255,255,255,0.88);
-      max-width: 680px;
-    }
-    .thanks-card .highlight {
-      color: #f0c96e;
-      font-weight: 600;
-    }
-    .thanks-card .signature {
-      margin-top: 36px;
-      padding-top: 24px;
-      border-top: 1px solid rgba(255,255,255,0.18);
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .thanks-card .signature-names {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.05rem;
-      color: rgba(255,255,255,0.9);
-    }
-    .thanks-card .signature-names span {
-      display: block;
-      font-family: 'Source Serif 4', serif;
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.6);
-      font-style: italic;
-      margin-top: 2px;
-    }
-    .badge-uniminuto {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
-      border-radius: 24px;
-      padding: 6px 16px;
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.85);
-      letter-spacing: 0.5px;
-      margin-top: 20px;
-    }
-
-    /* Footer */
-    .ref-footer {
-      background: var(--texto);
-      color: rgba(255,255,255,0.6);
-      padding: 28px 0;
-      text-align: center;
-      font-size: 0.85rem;
-    }
-    .ref-footer a { color: rgba(255,255,255,0.5); }
-    .ref-footer .sitename { color: #f0c96e; font-weight: 600; }
-
-    /* Floating back button */
-    .float-back {
-      position: fixed;
-      bottom: 28px;
-      left: 28px;
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      background: linear-gradient(135deg, #2D5A27, #4a7c3f);
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 20px 12px 16px;
-      border-radius: 50px;
-      box-shadow: 0 4px 20px rgba(45,90,39,0.45);
-      font-family: 'Source Serif 4', serif;
-      font-size: 0.9rem;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .float-back:hover {
-      color: #fff;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px rgba(45,90,39,0.6);
-    }
-    .float-back .float-icon {
-      background: rgba(255,255,255,0.15);
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-size: 1rem;
-    }
+    
   </style>
 </head>
 
 <body>
 
-  <!-- Botón flotante volver al proyecto -->
-  <a href="index.html" class="float-back" onclick="window.location.href='index.html'; return false;">
+  <!-- Botón flotante volver -->
+  <a href="index.html" class="float-back">
     <span class="float-icon"><i class="bi bi-arrow-left"></i></span>
     Volver al proyecto
   </a>
 
+  <!-- ══════════════════════════════════════════
+       BARRA DE NAVEGACIÓN DEL INFORME
+  ══════════════════════════════════════════ -->
+  <nav class="inf-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="brand">Informe — Proyecto Muinane</a>
+        <ul>
+          <li><a href="#introduccion"><i class="bi bi-file-text me-1"></i>Introducción</a></li>
+          <li><a href="#conclusiones"><i class="bi bi-check2-circle me-1"></i>Conclusiones</a></li>
+          <li><a href="#referencias"><i class="bi bi-journal-bookmark me-1"></i>Referencias</a></li>
+          <li><a href="#agradecimientos"><i class="bi bi-heart me-1"></i>Agradecimientos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <main>
 
-    <!-- Hero -->
-    <div class="ref-hero">
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <div class="ref-hero" id="hero">
       <div class="container">
-        <h1>Referencias y<br>Agradecimientos</h1>
-        <p>Proyecto Educativo Mediado por TIC — Recuperación de la Lengua Muinane</p>
+        <div class="hero-tag">Proyecto Educativo Mediado por TIC</div>
+        <h1>Informe Final<br>Proyecto Muinane</h1>
+        <p>Transmisión de la lengua Muinane mediante TIC — Resguardo Nonuya de Villazul, Amazonas</p>
         <span class="ornament"></span>
       </div>
     </div>
 
-    <!-- References Section -->
-    <section class="ref-section">
+
+    <!-- ══════════════════════════════════════════
+         INTRODUCCIÓN
+    ══════════════════════════════════════════ -->
+    <section class="ref-section" id="introduccion">
       <div class="container">
+      
+        <h2 class="section-title">Introducción</h2>
 
-     
+        <!-- Pregunta 1 -->
+        <div class="pregunta-box">
+          ¿Para qué sirve el planteamiento de un plan de acción en el desarrollo de soluciones educativas?
+        </div>
+
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-8">
+            <p>Las TIC no se integran solas en los procesos educativos. Requieren planificación estructurada que traduzca las necesidades del contexto en acciones concretas y viables. El plan de acción es el instrumento que hace posible esa traducción. Pineda Acero (2016) señala que la etapa de planificación es la más crítica del ciclo de vida de un proyecto: ahí se define el alcance, se clarifican los objetivos y se determinan las acciones a ejecutar.</p>
+            <p>Un plan de acción sirve, en primer lugar, para definir qué problema se va a atender y por qué. Barbosa y De Moura (2016) afirman que la planificación no es un ejercicio formal sino el instrumento que conecta el concepto del proyecto con su ejecución, garantizando que cada actividad, recurso y decisión responda a los objetivos definidos. Sin un plan, el proyecto se dispersa, consume recursos sin resultados medibles o ignora las condiciones reales del contexto donde se implementa.</p>
+            <p>En el Proyecto Muinane, el plan de acción responde a un problema concreto: la lengua materna del pueblo Muinane no se está transmitiendo de generación en generación. Las causas son claras: ausencia de materiales educativos en Muinane, presión del español como lengua dominante en la escuela y ausencia total de la lengua en el espacio digital. Siguiendo el marco de Pineda Acero (2016), el problema se definió con un diagrama de Ishikawa, lo que permitió establecer el alcance de la intervención y justificar el uso de herramientas TIC controladas por la comunidad.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 h-100" style="background:#fff; border-radius:10px; border-left:5px solid var(--selva);">
+              <h6 style="color:var(--selva); margin-bottom:14px;"><i class="bi bi-lightbulb me-2"></i>¿Para qué sirve el plan de acción?</h6>
+              <ul style="font-size:0.88rem; color:#444; padding-left:16px; margin-bottom:14px;">
+                <li class="mb-2">Define el problema educativo con precisión y justifica la intervención.</li>
+                <li class="mb-2">Establece el alcance, los objetivos y las metas medibles del proyecto.</li>
+                <li class="mb-2">Organiza las actividades, los recursos y los tiempos de manera coherente.</li>
+                <li class="mb-2">Permite anticipar riesgos y establecer mecanismos de evaluación.</li>
+                <li>Garantiza que la solución responda a las necesidades reales del contexto educativo.</li>
+              </ul>
+              <p style="font-size:0.78rem; color:#999; margin:0;">Pineda Acero (2016); Barbosa &amp; De Moura (2016)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="pregunta-box">
+          ¿Qué elementos clave debe contemplar un plan de acción para un proyecto de tipo educativo?
+        </div>
+
+        <p>Pineda Acero (2016) propone un marco de cuatro bloques interdependientes para el diseño de proyectos educativos mediados por TIC: el <strong>fundamento problémico</strong>, que define el problema y comprende el contexto institucional; el <strong>eje de acción</strong>, que traduce ese problema en objetivos, metas, indicadores y actividades concretas; la <strong>base institucional</strong>, que identifica las normas, políticas y estándares que enmarcan el proyecto; y el <strong>control</strong>, que gestiona el alcance, el tiempo, los costos, los recursos y los riesgos, más los mecanismos de evaluación.
+        <p>En coherencia con ese marco, el Proyecto Muinane desarrolló cada uno de los cuatro bloques. El fundamento problémico partió del diagnóstico del resguardo Nonuya de Villazul, con información directa del docente indígena José Fernando Paki. El eje de acción se concretó en seis objetivos con metas medibles, un cronograma de 18 meses organizado en cuatro fases y una metodología de investigación-acción participativa. La base institucional integró seis normas del ordenamiento jurídico colombiano, desde la Ley 115 de 1994 hasta la Ley 1381 de 2010 sobre lenguas nativas. El control se materializó en una tabla de evaluación con criterios, indicadores, instrumentos, frecuencias y responsables, más una matriz de vulnerabilidad con 12 riesgos clasificados por probabilidad e impacto.</p>
+        <p>Cerezuela y Ollé (2018) recuerdan que la gestión de proyectos educativos exige equilibrar tres restricciones: alcance, tiempo y costos. En este proyecto, esa gestión fue explícita. El alcance se delimitó al resguardo Nonuya de Villazul con 120 estudiantes y 10 sabedores como beneficiarios directos. El tiempo se distribuyó en 18 meses con hitos comunitarios definidos. Los costos se presupuestaron de forma transparente con una estrategia de financiación mixta respaldada en contratos por prestación de servicios.</p>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         CONCLUSIONES
+    ══════════════════════════════════════════ -->
+    <section class="ref-section" id="conclusiones" style="background:#f8fdf8;">
+      <div class="container">
+    
+        <h2 class="section-title">Conclusiones</h2>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="d-flex gap-3">
+              <div class="concl-num flex-shrink-0">1</div>
+              <div>
+                <h6 style="color:var(--selva); margin-bottom:8px;">El plan de acción es condición de viabilidad, no un trámite</h6>
+                <p style="font-size:0.92rem; color:#444;">La formulación estructurada del proyecto demostró que sin un plan de acción sólido, ninguna solución tecnológica es pertinente ni sostenible. Siguiendo a Pineda Acero (2016), definir bien el problema educativo fue lo que orientó toda la intervención: entender por qué la lengua Muinane deja de transmitirse en las nuevas generaciones permitió diseñar respuestas a causas reales. El plan articuló la voluntad comunitaria con recursos concretos, plazos definidos y responsabilidades claras.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="d-flex gap-3">
+              <div class="concl-num flex-shrink-0">2</div>
+              <div>
+                <h6 style="color:var(--selva); margin-bottom:8px;">Las TIC se integran al servicio del proyecto educativo</h6>
+                <p style="font-size:0.92rem; color:#444;">La propuesta confirma la premisa de Pineda Acero (2016): las TIC son herramientas al servicio de un propósito pedagógico definido. La aplicación móvil, el servidor comunitario offline y el canal de YouTube se eligieron porque responden con precisión a los objetivos del proyecto: documentar, preservar y transmitir la lengua Muinane con soberanía comunitaria sobre los datos. Esto coincide con lo que Barbosa y De Moura (2016) llaman el modelo de implementación: un modo de hacer que depende de la cultura organizativa y del contexto real de la comunidad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="d-flex gap-3">
+              <div class="concl-num flex-shrink-0">3</div>
+              <div>
+                <h6 style="color:var(--selva); margin-bottom:8px;">La participación comunitaria es un requisito metodológico</h6>
+                <p style="font-size:0.92rem; color:#444;">Las tres reuniones comunitarias de socialización, selección y entrega responden a un principio de Barbosa y De Moura (2016): la ejecución de un proyecto depende esencialmente del trabajo y la interacción entre personas. Los sabedores mayores son productores de conocimiento. Su participación activa garantiza la pertinencia cultural de los materiales. Sin ese vínculo, los recursos digitales no tendrían contenido que valga la pena preservar. La comunidad decide qué se documenta, cómo se comparte y en qué condiciones se accede.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="d-flex gap-3">
+              <div class="concl-num flex-shrink-0">4</div>
+              <div>
+                <h6 style="color:var(--selva); margin-bottom:8px;">La evaluación y el control se planifican desde el diseño</h6>
+                <p style="font-size:0.92rem; color:#444;">La tabla de indicadores del proyecto, con criterios de calidad, cobertura, eficiencia y resultados, forma parte del diseño desde el inicio. Cerezuela y Ollé (2018) identifican la gestión deficiente de recursos y la valoración incorrecta del alcance como las causas más frecuentes de fracaso en proyectos educativos. La matriz de vulnerabilidad, con 12 riesgos clasificados por probabilidad e impacto, responde a esa realidad: establece protocolos de respuesta antes de que los problemas ocurran.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="d-flex gap-3">
+              <div class="concl-num flex-shrink-0">5</div>
+              <div>
+                <h6 style="color:var(--selva); margin-bottom:8px;">La sostenibilidad es parte del plan de acción</h6>
+                <p style="font-size:0.92rem; color:#444;">Una lengua no se revitaliza en 18 meses. Por eso, el proyecto integra desde su diseño estrategias de continuidad: la curricularización de los materiales producidos en el Proyecto Educativo Institucional del resguardo, la formación de docentes y jóvenes como productores de contenido digital, y la firma de acuerdos con otras tres comunidades Muinane de Caquetá para replicar la metodología. Pineda Acero (2016) recomienda que, una vez formulado el proyecto, sea registrado e incorporado al PEI institucional para garantizar el acceso a los recursos más allá del financiamiento inicial.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="d-flex gap-3">
+              <div class="concl-num flex-shrink-0">6</div>
+              <div>
+                <h6 style="color:var(--selva); margin-bottom:8px;">Un proyecto educativo con TIC es también un acto político</h6>
+                <p style="font-size:0.92rem; color:#444;">Documentar y transmitir la lengua Muinane es un acto de justicia lingüística amparado por la Ley 1381 de 2010 y por los principios de la educación intercultural bilingüe. El marco normativo del proyecto es la garantía de que las acciones se inscriben en un ordenamiento jurídico que reconoce los derechos lingüísticos del pueblo Muinane como derechos fundamentales. Cerezuela y Ollé (2018) señalan que la gestión de proyectos educativos exige alinear cada decisión con los objetivos estratégicos de la institución y el contexto donde opera. En este caso, ese contexto es un territorio amazónico que afirma el derecho a existir en su propia lengua.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cierre -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <blockquote style="border-left:4px solid var(--ocre); padding:20px 28px; background:#fdf8f0; border-radius:0 10px 10px 0; font-style:italic; color:#555;">
+              La tecnología puede servir a los pueblos indígenas cuando se diseña con rigor metodológico, respeto cultural y con la comunidad tomando las decisiones. La lengua Muinane no espera: actuar ahora es la única manera de que las generaciones futuras puedan elegir hablarla.
+              <footer class="mt-3" style="font-size:0.85rem; color:#888; font-style:normal;">
+                — Grupo 5, Proyecto Muinane, Resguardo Nonuya de Villazul, Amazonas, 2026.
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         REFERENCIAS BIBLIOGRÁFICAS (sección única)
+    ══════════════════════════════════════════ -->
+    <section class="ref-section" id="referencias">
+      <div class="container">
+      
         <h2 class="section-title">Referencias Bibliográficas</h2>
+       
 
-        <!-- GUÍA TÉCNICO-PEDAGÓGICA (CGEIB) -->
+        <!-- 1. Libros y artículos académicos -->
         <div class="ref-group" data-aos="fade-up">
-          <div class="ref-group-title">
-            <i class="bi bi-book"></i> Guía técnico‑pedagógica para el diseño de proyectos innovadores
-          </div>
-          <div class="ref-item">
-            De los Santos Quintanilla, A. R., Ramírez Lozano, J., &amp; Lara Torres, J. F. (2013). <em>Guía técnico-pedagógica para el diseño de proyectos innovadores de educación intercultural</em>. Coordinación General de Educación Intercultural y Bilingüe (CGEIB-SEP).
-          </div>
-        </div>
-
-        <!-- Legislación colombiana -->
-        <div class="ref-group" data-aos="fade-up">
-          <div class="ref-group-title">
-            <i class="bi bi-bank"></i> Legislación colombiana
-          </div>
-          <div class="ref-item">
-            Congreso de la República de Colombia. (1992). <em>Ley 30 de 1992, por la cual se organiza el servicio público de la educación superior</em>.
-          </div>
-          <div class="ref-item">
-            Congreso de la República de Colombia. (1994). <em>Ley 115 de 1994, por la cual se expide la Ley General de Educación</em>.
-          </div>
-          <div class="ref-item">
-            Congreso de la República de Colombia. (2006). <em>Ley 1098 de 2006, por la cual se expide el Código de la Infancia y la Adolescencia</em>.
-          </div>
-          <div class="ref-item">
-            Congreso de la República de Colombia. (2010). <em>Ley 1381 de 2010, por la cual se desarrollan los derechos de los pueblos indígenas sobre sus lenguas nativas</em>.
-          </div>
-          <div class="ref-item">
-            Congreso de la República de Colombia. (2016). <em>Ley 1804 de 2016, por la cual se establece la política de Estado para el desarrollo integral de la primera infancia de Cero a Siempre</em>.
-          </div>
-          <div class="ref-item">
-            Ministerio de Educación Nacional. (2015). <em>Decreto 1075 de 2015: Decreto Único Reglamentario del Sector Educación</em>.
-          </div>
-          <div class="ref-item">
-            Ministerio de Educación Nacional. (2016-2026). <em>Plan Nacional Decenal de Educación 2016-2026</em>.
-          </div>
-          <div class="ref-item">
-            Ministerio de Educación Nacional. (s.f.). <em>Plan Nacional de Desarrollo: Educación de calidad para todos</em>.
-          </div>
-        </div>
-
-        <!-- Libros y artículos académicos -->
-        <div class="ref-group" data-aos="fade-up" data-aos-delay="100">
           <div class="ref-group-title">
             <i class="bi bi-journal-text"></i> Libros y artículos académicos
           </div>
+
           <div class="ref-item">
             Álvarez García, I. (2002). <em>Planificación y desarrollo de proyectos sociales y educativos</em>. Limusa Noriega.
           </div>
+
           <div class="ref-item">
-            Barbosa, E., &amp; de Moura, D. G. (2016). <em>Proyectos educativos y sociales: Planificación, gestión, seguimiento y evaluación</em>. Narcea.
+            Barbosa, E., &amp; de Moura, D. G. (2016). <em>Proyectos educativos y sociales: Planificación, gestión, seguimiento y evaluación</em>. Narcea Ediciones. <a href="https://elibro.net/es/ereader/uniminuto/46139" target="_blank">https://elibro.net/es/ereader/uniminuto/46139</a>
           </div>
+
           <div class="ref-item">
-            Conejo, F. (2021). <em>Matriz de vulnerabilidad</em> (Material de apoyo). Corporación Universitaria Minuto de Dios – UNIMINUTO.
+            Cerezuela, B., &amp; Ollé, C. (2018). <em>Gestión de proyectos paso a paso</em>. Editorial UOC. <a href="https://elibro.net/es/ereader/uniminuto/116314" target="_blank">https://elibro.net/es/ereader/uniminuto/116314</a>
           </div>
+
           <div class="ref-item">
-            Díaz‑Barriga, F. (2003). Cognición situada y estrategias para el aprendizaje significativo. <em>Revista Electrónica de Investigación Educativa, 5</em>(2). <a href="https://www.redalyc.org/articulo.oa?id=15550207" target="_blank">https://www.redalyc.org/articulo.oa?id=15550207</a>
+            Conejo, F. (2021). <em>Matriz de vulnerabilidad</em> [Material de apoyo académico]. Corporación Universitaria Minuto de Dios – UNIMINUTO.
           </div>
+
+          <div class="ref-item">
+            De los Santos Quintanilla, A. R., Ramírez Lozano, J., &amp; Lara Torres, J. F. (2013). <em>Guía técnico-pedagógica para el diseño de proyectos innovadores de educación intercultural</em>. Coordinación General de Educación Intercultural y Bilingüe (CGEIB-SEP).
+          </div>
+
+          <div class="ref-item">
+            Díaz-Barriga, F. (2003). Cognición situada y estrategias para el aprendizaje significativo. <em>Revista Electrónica de Investigación Educativa, 5</em>(2). <a href="https://www.redalyc.org/articulo.oa?id=15550207" target="_blank">https://www.redalyc.org/articulo.oa?id=15550207</a>
+          </div>
+
           <div class="ref-item">
             Fishman, J. A. (1991). <em>Reversing language shift: Theoretical and empirical foundations of assistance to threatened languages</em>. Multilingual Matters.
           </div>
+
           <div class="ref-item">
             Galarza, J., &amp; Almuiñas, J. (2015). La gestión de los riesgos de planificación estratégica en las instituciones de educación superior. <em>Revista Cubana de Educación Superior, 34</em>(2), 45–53.
           </div>
+
           <div class="ref-item">
-            ILPES. (1992). <em>Guía para la presentación de proyectos</em> (20ª ed.). Siglo XXI Editores.
+            ILPES. (1992). <em>Guía para la presentación de proyectos</em> (20.ª ed.). Siglo XXI Editores.
           </div>
+
           <div class="ref-item">
-            Ollé, C., &amp; Cerezuela, B. (2018). <em>Gestión de proyectos paso a paso</em>. UOC.
+            Palladino, E. (2014). <em>Administración y gestión de proyectos</em>. Espacio Editorial. <a href="https://elibro.net/es/ereader/uniminuto/67045" target="_blank">https://elibro.net/es/ereader/uniminuto/67045</a>
           </div>
+
           <div class="ref-item">
             Piaget, J. (1970). <em>El estructuralismo</em>. Editorial Proteo.
           </div>
+
           <div class="ref-item">
-            Pineda Acero, J. A. (2016). Diseño de proyectos educativos mediados por TIC: un marco de referencia. <em>Opción, 32</em>(10), 479–499.
+            Pineda Acero, J. A. (2016). Diseño de proyectos educativos mediados por TIC: un marco de referencia. <em>Opción, 32</em>(10), 479–499. <a href="http://www.redalyc.org/articulo.oa?id=31048901026" target="_blank">http://www.redalyc.org/articulo.oa?id=31048901026</a>
           </div>
+
           <div class="ref-item">
             Ponce Talancón, H. (2007). La matriz FODA: una alternativa para realizar diagnósticos y determinar estrategias de intervención en las organizaciones productivas y sociales. <em>Contribuciones a la Economía</em>. <a href="https://www.eumed.net/ce/2007b/htc.htm" target="_blank">https://www.eumed.net/ce/2007b/htc.htm</a>
           </div>
+
           <div class="ref-item">
             Schmelkes, S. (2006). La interculturalidad en la educación básica. <em>Revista Prelac, 2</em>, 68–83. UNESCO.
           </div>
+
           <div class="ref-item">
             Vygotsky, L. S. (1978). <em>El desarrollo de los procesos psicológicos superiores</em>. Crítica.
           </div>
         </div>
 
-        <!-- Organismos internacionales -->
-        <div class="ref-group" data-aos="fade-up" data-aos-delay="200">
+        <!-- 2. Legislación colombiana -->
+        <div class="ref-group" data-aos="fade-up">
           <div class="ref-group-title">
-            <i class="bi bi-globe-americas"></i> Organismos internacionales
+            <i class="bi bi-bank"></i> Legislación colombiana
           </div>
+
           <div class="ref-item">
-            UNESCO. (2003). <em>Language vitality and endangerment</em>. Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura.
+            Congreso de la República de Colombia. (1992). <em>Ley 30 de 1992, por la cual se organiza el servicio público de la educación superior</em>.
           </div>
+
           <div class="ref-item">
-            UNESCO. (2006). <em>Directrices de la UNESCO sobre educación intercultural</em>. UNESCO.
+            Congreso de la República de Colombia. (1994). <em>Ley 115 de 1994, Ley General de Educación</em>.
           </div>
+
           <div class="ref-item">
-            Organización Internacional del Trabajo. (1989). <em>Convenio 169 sobre Pueblos Indígenas y Tribales</em>. OIT.
+            Congreso de la República de Colombia. (2006). <em>Ley 1098 de 2006, Código de la Infancia y la Adolescencia</em>.
           </div>
+
           <div class="ref-item">
-            Organización de las Naciones Unidas. (2007). <em>Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas</em>. ONU.
+            Congreso de la República de Colombia. (2010). <em>Ley 1381 de 2010, por la cual se desarrollan los derechos de los grupos étnicos sobre sus lenguas nativas</em>.
+          </div>
+
+          <div class="ref-item">
+            Congreso de la República de Colombia. (2016). <em>Ley 1804 de 2016, política de Estado para el desarrollo integral de la primera infancia De Cero a Siempre</em>.
+          </div>
+
+          <div class="ref-item">
+            Ministerio de Educación Nacional. (2015). <em>Decreto 1075 de 2015: Decreto Único Reglamentario del Sector Educación</em>.
+          </div>
+
+          <div class="ref-item">
+            Ministerio de Educación Nacional. (2016). <em>Plan Nacional Decenal de Educación 2016–2026: El camino hacia la calidad y la equidad</em>.
           </div>
         </div>
 
-        <!-- Recursos digitales -->
-        <div class="ref-group" data-aos="fade-up" data-aos-delay="300">
+        <!-- 3. Organismos internacionales -->
+        <div class="ref-group" data-aos="fade-up">
+          <div class="ref-group-title">
+            <i class="bi bi-globe-americas"></i> Organismos internacionales
+          </div>
+
+          <div class="ref-item">
+            Organización Internacional del Trabajo. (1989). <em>Convenio 169 sobre Pueblos Indígenas y Tribales en Países Independientes</em>. OIT.
+          </div>
+
+          <div class="ref-item">
+            Organización de las Naciones Unidas. (2007). <em>Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas</em>. ONU.
+          </div>
+
+          <div class="ref-item">
+            UNESCO. (2003). <em>Language vitality and endangerment</em>. Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura.
+          </div>
+
+          <div class="ref-item">
+            UNESCO. (2006). <em>Directrices de la UNESCO sobre educación intercultural</em>. UNESCO.
+          </div>
+
+          <div class="ref-item">
+            UNESCO. (2022). <em>Atlas UNESCO de las lenguas del mundo en peligro</em>. <a href="https://www.unesco.org/languages-atlas/" target="_blank">https://www.unesco.org/languages-atlas/</a>
+          </div>
+        </div>
+
+        <!-- 4. Fuente primaria -->
+        <div class="ref-group" data-aos="fade-up">
+          <div class="ref-group-title">
+            <i class="bi bi-person-lines-fill"></i> Fuente primaria
+          </div>
+
+          <div class="ref-item">
+            Paki, J. F. (2026, 31 de marzo). <em>Situación sociolingüística del resguardo Nonuya de Villazul</em> [Comunicación personal]. Docente indígena Muinane, Amazonas, Colombia.
+          </div>
+        </div>
+
+        <!-- 5. Recursos digitales -->
+        <div class="ref-group" data-aos="fade-up">
           <div class="ref-group-title">
             <i class="bi bi-display"></i> Recursos digitales
           </div>
+
           <div class="ref-item">
             Zepeda, J. A. (2019, 16 de septiembre). <em>Mapa de calor con Excel</em> [Video]. YouTube. <a href="https://youtu.be/yjfQVaH2Kek" target="_blank">https://youtu.be/yjfQVaH2Kek</a>
           </div>
@@ -430,11 +362,15 @@
       </div>
     </section>
 
-    <!-- Thank You Section (sin cambios) -->
-    <section class="ref-section">
+
+    <!-- ══════════════════════════════════════════
+         AGRADECIMIENTOS
+    ══════════════════════════════════════════ -->
+    <section class="ref-section" id="agradecimientos">
       <div class="container">
-        <p class="section-label">Reconocimiento</p>
+
         <h2 class="section-title">Agradecimientos</h2>
+
         <div class="thanks-card" data-aos="fade-up">
           <div class="thanks-icon"><i class="bi bi-heart-fill"></i></div>
           <h2>Gracias, docente Francisco Conejo</h2>
@@ -442,15 +378,15 @@
             Este proyecto no habría sido posible sin la orientación del docente
             <span class="highlight">Francisco Conejo</span>,
             de la asignatura <span class="highlight">Formulación de Proyectos Educativos Mediados por TIC</span>.
-            Su guía metodológica, su exigencia académica y su capacidad para conectar la teoría con los problemas reales de las comunidades educativas fueron determinantes en cada etapa de este trabajo.
+            Su guía metodológica y su exigencia académica fueron determinantes para que el trabajo tomara forma con rigor y pertinencia territorial.
           </p>
-          <p style="margin-top: 18px;">
+          <p style="margin-top:18px;">
             Agradecemos también a la
             <span class="highlight">Corporación Universitaria Minuto de Dios — UNIMINUTO</span>
-            por crear los espacios formativos que hacen posible proyectos como este: iniciativas que no se quedan en el aula, sino que buscan responder a realidades concretas, urgentes y situadas. La formación que UNIMINUTO ofrece en gestión de tecnología educativa nos dio las herramientas para mirar la educación con criterio crítico y con responsabilidad social.
+            por crear espacios formativos que conectan la teoría con realidades concretas. La formación en gestión de tecnología educativa nos dio herramientas para mirar la educación con criterio y con responsabilidad hacia las comunidades.
           </p>
-          <p style="margin-top: 18px;">
-            Que este proyecto sobre la lengua Muinane sea un pequeño aporte a la conversación sobre lo que la educación mediada por tecnología puede y debe hacer cuando se pone al servicio de quienes más lo necesitan.
+          <p style="margin-top:18px;">
+            Que este trabajo sobre la lengua Muinane aporte algo a la discusión sobre lo que la educación mediada por tecnología puede hacer cuando se pone al servicio de quienes la necesitan.
           </p>
           <div class="badge-uniminuto">
             <i class="bi bi-mortarboard-fill"></i>
@@ -472,6 +408,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -480,23 +417,32 @@
   <footer class="ref-footer">
     <div class="container">
       <p>© 2026 <span class="sitename">Proyecto Muinane</span> — Todos los derechos reservados</p>
-      <p style="margin-top:6px;">Diseñado por <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/" target="_blank">DevTools</a></p>
+      
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
+  <script>
+    // Resaltar ítem activo del menú al hacer scroll
+    const sections = document.querySelectorAll('section[id], div[id]');
+    const navLinks = document.querySelectorAll('.inf-nav ul li a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+      });
+      navLinks.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+      });
+    });
+  </script>
 
+</body>
 </html>
